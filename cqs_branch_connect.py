@@ -13,7 +13,7 @@ import os
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from cqs_branch_connect_database import *
-from concurrent import futures#采用3.x新出来的多进程
+# from concurrent import futures#采用3.x新出来的多进程 这脚本吓得我都不敢用多线程
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
@@ -78,17 +78,17 @@ class cqs_branch_connect(object):
         print('已经完成管道连接表的excel生成')
 
 if __name__ == '__main__':
-    ex = futures.ThreadPoolExecutor(max_workers=5)
+    # ex = futures.ThreadPoolExecutor(max_workers=4)
     cqs=cqs_branch_connect()
     name_list=cqs_pt_rating().get_path()
     connection_id=get_connectionid()
     batch_id=get_batch_id()
     conn_order_number=get_order_number()
     bug_connection_id=0
-    ex.submit(cqs.make_exceldata,name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
-    # cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
-    ex.submit(compliment)
-    # compliment()
+    # ex.submit(cqs.make_exceldata,name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
+    cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
+    # ex.submit(compliment)
+    compliment()
     print('已经完成对管道连接表的插入，谢谢使用')
 
 

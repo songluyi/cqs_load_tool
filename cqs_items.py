@@ -9,7 +9,7 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
-import os,random
+import os
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import time
@@ -34,7 +34,6 @@ class cqs_items(object):
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'item'
         line=1#从第二行开始
-        batch_id+=1
         item_id=item_id+1
         batch_id=batch_id+1
         item_order_number=item_order_number+1

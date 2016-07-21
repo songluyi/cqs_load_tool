@@ -28,7 +28,7 @@ class cqs_pipe_thickness(object):
     def make_exceldata(self,name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number):
         wb_write=Workbook()
         ws_write = wb_write.get_active_sheet()
-        ws_write.title = 'pt_rating'
+        ws_write.title = 'pipe_thickness'
         line=1#从第二行开始
         pipe_id=pipe_id+1
         batch_id=batch_id+1
