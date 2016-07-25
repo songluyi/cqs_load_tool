@@ -13,6 +13,8 @@ import os
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from cqs_pt_rating_database import *
+import multiprocessing
+from concurrent import futures#采用3.x新出来的多进程
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
@@ -88,6 +90,9 @@ class cqs_pt_rating(object):
         print('已经完成压力温度表的excel生成')
         return bug_pi_id
 if __name__ == '__main__':
+    # ex = futures.ThreadPoolExecutor(max_workers=4)
+    pool_size=multiprocessing.cpu_count()*2
+    pool=multiprocessing.Pool(processes=pool_size)
     cqs=cqs_pt_rating()
     name_list=cqs.get_path()
     bug_pi_id=0
@@ -95,6 +100,8 @@ if __name__ == '__main__':
     space_tab=0
     batch_id=get_batch_id()
     pt_order_number=get_order_number()
-    bug_pi_id=cqs.make_exceldata(name_list,bug_pi_id,pi_id,batch_id,pt_order_number)
-    compliment()
+    cqs.make_exceldata(name_list,bug_pi_id,pi_id,batch_id,pt_order_number)
+    excel_name='new压力温度.xlsx'
+    data_list=compliment(header_name,excel_name)
+    result=pool.map(insert_db,data_list)
     print('最后已经完成提交cqs的压力与温度数据提交~谢谢使用')

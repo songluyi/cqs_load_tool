@@ -107,6 +107,10 @@ class cqs_index(object):
 
                     pres_data=ws_load.cell(row=row+1, column=4).value
                     if pres_data is not None:
+                        if pres_data=="常压":
+                            ws_write.cell(row=line+space_tab, column=10).value=0
+                            ws_write.cell(row=line+space_tab, column=11).value=1
+                            ws_write.cell(row=line+space_tab, column=12).value=pres_data
                         if ',' in pres_data:
                             new_data=pres_data.split(',')
                             ws_write.cell(row=line+space_tab, column=10).value=float(new_data[0].replace('＞',''))#小的读入min press里面
@@ -115,7 +119,7 @@ class cqs_index(object):
                             new_data=pres_data.replace('≤','')
                             ws_write.cell(row=line+space_tab, column=11).value=float(new_data)#小的读入max press里面
                         else:
-                            ws_write.cell(row=line+space_tab, column=12).value=float(pres_data)#其他无法解析情况扔进spec press里面
+                            ws_write.cell(row=line+space_tab, column=12).value=pres_data#其他无法解析情况扔进spec press里面
         name='new'+'索引表'+'.xlsx'
         wb_write.save(name)
         print('已经生成excel，请注意查看根目录')
@@ -144,6 +148,7 @@ class cqs_index(object):
 
 
 if __name__ == '__main__':
+    start_time=time.time()
     cqs=cqs_index()
     name_list=cqs.get_path()
     bug_index_id=0
@@ -154,4 +159,7 @@ if __name__ == '__main__':
     batch_id=batch_id+1
     bug_index_id=cqs.make_exceldata(bug_index_id,name_list,space_tab,index_id,nothing,batch_id)
     compliment()
+    end_time=time.time()
     print('最后已经完成提交cqs_index~谢谢使用')
+    print('耗时：')
+    print(start_time-end_time)

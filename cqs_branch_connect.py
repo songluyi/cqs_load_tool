@@ -9,12 +9,17 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
-import os
+import os,sys
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from cqs_branch_connect_database import *
-# from concurrent import futures#采用3.x新出来的多进程 这脚本吓得我都不敢用多线程
+from multiprocessing.dummy import Pool as ThreadPool
+from multiprocessing import Process, Manager
+import multiprocessing
+import threading
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
+from cqs_pt_rating_database import compliment
+from concurrent import futures#采用3.x新出来的多进程
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
@@ -78,21 +83,25 @@ class cqs_branch_connect(object):
         print('已经完成管道连接表的excel生成')
 
 if __name__ == '__main__':
-    # ex = futures.ThreadPoolExecutor(max_workers=4)
+    # ex = futures.ThreadPoolExecutor(max_workers=8)
+    # pool=ThreadPool(4)
+    start_time=time.time()
     cqs=cqs_branch_connect()
     name_list=cqs_pt_rating().get_path()
     connection_id=get_connectionid()
     batch_id=get_batch_id()
     conn_order_number=get_order_number()
     bug_connection_id=0
-    # ex.submit(cqs.make_exceldata,name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
     cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
-    # ex.submit(compliment)
-    compliment()
+    excel_name='new管道连接.xlsx'
+    data_list=compliment(header_name,excel_name)
+    pool_size=multiprocessing.cpu_count()*4
+    pool=multiprocessing.Pool(processes=pool_size)
+    pool.map_async(insert_db,data_list)
+    pool.close()
+    pool.join()
+    end_time=time.time()
+    print('耗时为：',start_time-end_time,'插入总数为：',len(data_list))
     print('已经完成对管道连接表的插入，谢谢使用')
-
-
-
-
 
 
