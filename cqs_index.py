@@ -162,4 +162,4 @@ if __name__ == '__main__':
     end_time=time.time()
     print('最后已经完成提交cqs_index~谢谢使用')
     print('耗时：')
-    print(start_time-end_time)
+    print(end_time-start_time)

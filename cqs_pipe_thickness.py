@@ -78,6 +78,7 @@ class cqs_pipe_thickness(object):
         print('已经完成管道厚度表的excel生成')
 if __name__ == '__main__':
     # ex = futures.ThreadPoolExecutor(max_workers=1)
+    start_time=time.time()
     cqs=cqs_pipe_thickness()
     name_list=cqs_pt_rating().get_path()
     pipe_id=get_pipeid()
@@ -93,6 +94,7 @@ if __name__ == '__main__':
     pool.close()
     pool.join()
     end_time=time.time()
+    print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('已经完成对管道壁厚表的插入，谢谢使用')
 
 

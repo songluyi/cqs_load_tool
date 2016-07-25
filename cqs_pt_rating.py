@@ -50,7 +50,7 @@ class cqs_pt_rating(object):
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'pt_rating'
         line=1#从第二行开始
-        batch_id+=1
+        batch_id=batch_id+1
         for i in range(1,28):
                 ws_write.cell(row=1, column=i).value = header_name[i-1]
 
@@ -72,6 +72,7 @@ class cqs_pt_rating(object):
                         pt_order_number+=1
                         line+=1
                         bug_pi_id+=1
+
                         ws_write.cell(row=line, column=1).value=pi_id
                         ws_write.cell(row=line, column=2).value=batch_id
                         ws_write.cell(row=line, column=3).value=pt_order_number
@@ -91,8 +92,7 @@ class cqs_pt_rating(object):
         return bug_pi_id
 if __name__ == '__main__':
     # ex = futures.ThreadPoolExecutor(max_workers=4)
-    pool_size=multiprocessing.cpu_count()*2
-    pool=multiprocessing.Pool(processes=pool_size)
+    start_time=time.time()
     cqs=cqs_pt_rating()
     name_list=cqs.get_path()
     bug_pi_id=0
@@ -103,5 +103,11 @@ if __name__ == '__main__':
     cqs.make_exceldata(name_list,bug_pi_id,pi_id,batch_id,pt_order_number)
     excel_name='new压力温度.xlsx'
     data_list=compliment(header_name,excel_name)
-    result=pool.map(insert_db,data_list)
+    pool_size=multiprocessing.cpu_count()*4
+    pool=multiprocessing.Pool(processes=pool_size)
+    pool.map_async(insert_db,data_list)
+    pool.close()
+    pool.join()
+    end_time=time.time()
+    print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('最后已经完成提交cqs的压力与温度数据提交~谢谢使用')

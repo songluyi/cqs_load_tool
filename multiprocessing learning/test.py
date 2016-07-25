@@ -16,5 +16,7 @@ Contact:    slysly759@gmail.com
 #     ws_write.cell(row=line+space_tab, column=10).value=0
 #     ws_write.cell(row=line+space_tab, column=11).value=1
 #     ws_write.cell(row=line+space_tab, column=12).value=pres_data
-line=1
-print('已经插入数据，行数为',line,'hello')
+# line=1
+# print('已经插入数据，行数为',line,'hello')
+import multiprocessing
+print(multiprocessing.cpu_count())

@@ -11,6 +11,7 @@ Contact:    slysly759@gmail.com
 """
 import cx_Oracle
 from openpyxl import load_workbook
+import random
 def get_ptid():
     conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
     cur =conn.cursor()
@@ -44,6 +45,7 @@ def insert_db(row):
     cur =conn.cursor()
     r= cur.execute(" INSERT INTO cux.cux_cqs_pt_rating_t values (:PT_ID,:BATCH_ID,:PT_ORDER_NUMBER,:PIPING_MATL_CLASS,:TEMPERATURE,:PRESSURE,:CREATED_BY,to_date(:CREATION_DATE,'yyyy/mm/dd'),:LAST_UPDATED_BY,to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY,:ATTRIBUTE1,:ATTRIBUTE2,:ATTRIBUTE3,:ATTRIBUTE4,:ATTRIBUTE5,:ATTRIBUTE6,:ATTRIBUTE7,:ATTRIBUTE8,:ATTRIBUTE9,:ATTRIBUTE10,:ATTRIBUTE11,:ATTRIBUTE12,:ATTRIBUTE13,:ATTRIBUTE14,:ATTRIBUTE15)", row)
     conn.commit()
+    print('已经插入一条,如果发现本显示没有刷新请手动关掉，数据已经导入成功',random.random())
 
 def compliment(header_name,name):
     header_name=header_name

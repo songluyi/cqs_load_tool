@@ -85,19 +85,19 @@ goto menu
 
 :All
 @ echo.
-ECHO 　　　正在执行中..请稍等..
+ECHO 　　　执行索引表插入..请稍等..
 python cqs_index.py
 @ echo.
-ECHO 　　　执行下一行..请稍等..
+ECHO 　　　执行元件表插入..请稍等..
 python cqs_items.py
 @ echo.
-ECHO 　　　执行下一行..请稍等..
+ECHO 　　　执行壁厚表插入..请稍等..
 python cqs_pipe_thickness.py
 @ echo.
-ECHO 　　　执行下一行..请稍等..
+ECHO 　　　执行压力温度表插入..请稍等..
 python cqs_pt_rating.py
 @ echo.
-ECHO 　　　执行下一行..请稍等..
+ECHO 　　　执行支管连接表插入 数据会达到上万行 ..请耐心等待..
 python cqs_branch_connect.py
 ECHO 　　　已经执行完成正在返回菜单..请稍等..
 ping -n 3 127.1>nul 

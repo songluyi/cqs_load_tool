@@ -95,13 +95,13 @@ if __name__ == '__main__':
     cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
     excel_name='new管道连接.xlsx'
     data_list=compliment(header_name,excel_name)
-    pool_size=multiprocessing.cpu_count()*4
+    pool_size=multiprocessing.cpu_count()*8
     pool=multiprocessing.Pool(processes=pool_size)
     pool.map_async(insert_db,data_list)
     pool.close()
     pool.join()
     end_time=time.time()
-    print('耗时为：',start_time-end_time,'插入总数为：',len(data_list))
+    print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('已经完成对管道连接表的插入，谢谢使用')
 
 
