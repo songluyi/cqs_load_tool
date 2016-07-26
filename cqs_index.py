@@ -13,7 +13,7 @@ import os,random
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import time
-from cqs_index_database import get_indexid,compliment,get_batch_id
+from cqs_index_database import get_indexid,compliment,get_batch_id,insert_db
 from openpyxl.styles import numbers
 style_index_id=numbers.NumberFormatDescriptor(style=numbers.FORMAT_NUMBER_00)
 today_time=time.strftime("%Y-%m-%d", time.localtime())
@@ -158,7 +158,8 @@ if __name__ == '__main__':
     batch_id=get_batch_id()
     batch_id=batch_id+1
     bug_index_id=cqs.make_exceldata(bug_index_id,name_list,space_tab,index_id,nothing,batch_id)
-    compliment()
+    data_list=compliment()
+    insert_db(data_list)
     end_time=time.time()
     print('最后已经完成提交cqs_index~谢谢使用')
     print('耗时：')

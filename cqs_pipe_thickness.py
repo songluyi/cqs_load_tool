@@ -15,7 +15,7 @@ from openpyxl import load_workbook
 from cqs_pipe_thickness_database import *
 from concurrent import futures#采用3.x新出来的多进程
 import multiprocessing
-from cqs_pt_rating_database import compliment
+# from cqs_pt_rating_database import compliment
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
@@ -78,7 +78,7 @@ class cqs_pipe_thickness(object):
         print('已经完成管道厚度表的excel生成')
 if __name__ == '__main__':
     # ex = futures.ThreadPoolExecutor(max_workers=1)
-    start_time=time.time()
+
     cqs=cqs_pipe_thickness()
     name_list=cqs_pt_rating().get_path()
     pipe_id=get_pipeid()
@@ -88,11 +88,13 @@ if __name__ == '__main__':
     cqs.make_exceldata(name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number)
     excel_name='new管道厚度.xlsx'
     data_list=compliment(header_name,excel_name)
-    pool_size=multiprocessing.cpu_count()*4
-    pool=multiprocessing.Pool(processes=pool_size)
-    pool.map_async(insert_db,data_list)
-    pool.close()
-    pool.join()
+    # pool_size=multiprocessing.cpu_count()*2
+    # pool=multiprocessing.Pool(processes=pool_size)
+    start_time=time.time()
+    insert_db(data_list)
+    # pool.map_async(insert_db,data_list)
+    # pool.close()
+    # pool.join()
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('已经完成对管道壁厚表的插入，谢谢使用')

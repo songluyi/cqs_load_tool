@@ -73,14 +73,14 @@ class cqs_items(object):
                             ws_write.cell(row=line, column=3).value=item_order_number#写入item order number
                             item_order_number+=1
                             ws_write.cell(row=line, column=4).value=ws_load.cell(row=5, column=5).value#写入pip_matel_class
-                            ws_write.cell(row=line, column=5).value=ws_load.cell(row=catolog_line[count], column=1).value#写入item_catalog
-                            ws_write.cell(row=line, column=6).value=ws_load.cell(row=row, column=1).value#写入item_name
+                            ws_write.cell(row=line, column=5).value=str(ws_load.cell(row=catolog_line[count], column=1).value)#写入item_catalog
+                            ws_write.cell(row=line, column=6).value=str(ws_load.cell(row=row, column=1).value)#写入item_name
                             ws_write.cell(row=line, column=7).value=ws_load.cell(row=row, column=4).value#写入DN min
                             ws_write.cell(row=line, column=8).value=ws_load.cell(row=row, column=6).value#写入DN max
-                            ws_write.cell(row=line, column=9).value=ws_load.cell(row=row, column=8).value#写入END_FACING
-                            ws_write.cell(row=line, column=10).value=ws_load.cell(row=row, column=10).value#写入THK_RATING
-                            ws_write.cell(row=line, column=11).value=ws_load.cell(row=row, column=12).value#写入MATERIAL
-                            ws_write.cell(row=line, column=12).value=ws_load.cell(row=row, column=16).value#写入STANDARD_MODEL
+                            ws_write.cell(row=line, column=9).value=str(ws_load.cell(row=row, column=8).value)#写入END_FACING
+                            ws_write.cell(row=line, column=10).value=str(ws_load.cell(row=row, column=10).value)#写入THK_RATING
+                            ws_write.cell(row=line, column=11).value=str(ws_load.cell(row=row, column=12).value)#写入MATERIAL
+                            ws_write.cell(row=line, column=12).value=str(ws_load.cell(row=row, column=16).value)#写入STANDARD_MODEL
                             ws_write.cell(row=line, column=13).value=ws_load.cell(row=row, column=20).value#写入STANDARD_MODEL
                             ws_write.cell(row=line, column=14).value=0#写入created by
                             ws_write.cell(row=line, column=15).value=today_time
@@ -91,8 +91,6 @@ class cqs_items(object):
         wb_write.save(name)
         print('已经生成excel，请注意查看根目录')
 if __name__ == '__main__':
-    # ex = futures.ThreadPoolExecutor(max_workers=4)
-    start_time=time.time()
     cqs=cqs_items()
     name_list=cqs_pt_rating().get_path()
     item_id=get_itemid()
@@ -102,15 +100,10 @@ if __name__ == '__main__':
     cqs.make_exceldata(name_list,bug_item_id,item_id,batch_id,item_order_number)
     excel_name='new元件表.xlsx'
     data_list=compliment(header_name,excel_name)
-    pool_size=multiprocessing.cpu_count()*4
-    pool=multiprocessing.Pool(processes=pool_size)
-    pool.map_async(insert_db,data_list)
-    pool.close()
-    pool.join()
-    # for i in data_list:
-    #     insert_db(i)
+    start_time=time.time()
+    insert_db(data_list)
     end_time=time.time()
-    print('耗时为：',start_time-end_time,'插入总数为：',len(data_list))
+    print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('已经完成对管道元件表的插入，谢谢使用')
 
 

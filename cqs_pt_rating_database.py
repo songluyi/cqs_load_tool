@@ -43,9 +43,9 @@ def get_order_number():
 def insert_db(row):
     conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
     cur =conn.cursor()
-    r= cur.execute(" INSERT INTO cux.cux_cqs_pt_rating_t values (:PT_ID,:BATCH_ID,:PT_ORDER_NUMBER,:PIPING_MATL_CLASS,:TEMPERATURE,:PRESSURE,:CREATED_BY,to_date(:CREATION_DATE,'yyyy/mm/dd'),:LAST_UPDATED_BY,to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY,:ATTRIBUTE1,:ATTRIBUTE2,:ATTRIBUTE3,:ATTRIBUTE4,:ATTRIBUTE5,:ATTRIBUTE6,:ATTRIBUTE7,:ATTRIBUTE8,:ATTRIBUTE9,:ATTRIBUTE10,:ATTRIBUTE11,:ATTRIBUTE12,:ATTRIBUTE13,:ATTRIBUTE14,:ATTRIBUTE15)", row)
+    r= cur.executemany(" INSERT INTO cux.cux_cqs_pt_rating_t values (:PT_ID,:BATCH_ID,:PT_ORDER_NUMBER,:PIPING_MATL_CLASS,:TEMPERATURE,:PRESSURE,:CREATED_BY,to_date(:CREATION_DATE,'yyyy/mm/dd'),:LAST_UPDATED_BY,to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY,:ATTRIBUTE1,:ATTRIBUTE2,:ATTRIBUTE3,:ATTRIBUTE4,:ATTRIBUTE5,:ATTRIBUTE6,:ATTRIBUTE7,:ATTRIBUTE8,:ATTRIBUTE9,:ATTRIBUTE10,:ATTRIBUTE11,:ATTRIBUTE12,:ATTRIBUTE13,:ATTRIBUTE14,:ATTRIBUTE15)", row)
     conn.commit()
-    print('已经插入一条,如果发现本显示没有刷新请手动关掉，数据已经导入成功',random.random())
+    print('数据已经导入成功')
 
 def compliment(header_name,name):
     header_name=header_name
@@ -62,7 +62,5 @@ def compliment(header_name,name):
                excel_data[column-1]=float(excel_data[column-1])
        make_dict=dict(zip(header_name,excel_data))
        line=line+1
-       # print(make_dict)
-       # print('这里已经将该数据插入列表（不是数据库）')
        full_shit_list.append(make_dict)
     return full_shit_list
