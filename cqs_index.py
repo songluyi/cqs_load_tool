@@ -45,10 +45,14 @@ class cqs_index(object):
             #获取catalog在excel的行数,在样例中输出为[7,9,13,30,38] 注意：有些excel文件这里在最后面不加"xxx类" 导致上一类别数据无法导入请加上
             catolog_line=[]
             bug_index_id=index_id
-            for j in range(1,500):
+            for i in range(1,1000):
+                if '备注' in str(ws_load.cell(row=i, column=1).value):
+                    od=i-1#向上提一行
+            for j in range(1,od):
                 if '类' in str(ws_load.cell(row=j+6, column=1).value):
                    line_num=j+6
                    catolog_line.append(line_num)
+            catolog_line.append(od)
             first_one=catolog_line[0]
             last_one=catolog_line[-1]
             nothing_id=last_one-first_one-len(catolog_line)+1

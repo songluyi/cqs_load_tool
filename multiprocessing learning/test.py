@@ -132,3 +132,24 @@ Created on 2016年7月7日
 #
 # test2()
 
+# a='b1b8b0c6ad85528e144a433c6882f93e'
+# print(len(a))
+import cx_Oracle
+# conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+# cur =conn.cursor()
+# r= cur.execute("select max(batch_id) from CUX.CUX_CQS_INDEX_HIS_T")
+# # batch_id=[]
+# # for row in cur:
+# #         batch_id.extend(row)
+# # print(batch_id)
+# # print(max(batch_id))
+# result=cur.fetchone()
+# new_result=list(result)
+# print(new_result)
+# print(new_result[0])
+conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+cur =conn.cursor()
+r= cur.execute("select max(batch_id) from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T")
+result=cur.fetchone()
+new_result=list(result)
+print(new_result[0])
