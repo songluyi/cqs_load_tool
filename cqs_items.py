@@ -16,7 +16,6 @@ import time
 from cqs_items_database import *
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 from cqs_pt_rating_database import compliment
-import multiprocessing
 from openpyxl.styles import numbers
 from concurrent import futures#采用3.x新出来的多进程
 import time

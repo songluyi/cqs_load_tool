@@ -9,6 +9,7 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
+import cx_Oracle
 # count=1
 # print('number=%d')
 
@@ -147,9 +148,83 @@ import cx_Oracle
 # new_result=list(result)
 # print(new_result)
 # print(new_result[0])
+# conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+# cur =conn.cursor()
+# r= cur.execute("select max(batch_id) from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T")
+# result=cur.fetchone()
+# new_result=list(result)
+# print(new_result[0])
+#
+# from openpyxl import Workbook
+# from openpyxl import load_workbook
+# load_name="1.xlsx"
+# wb_load = load_workbook(filename=load_name)
+# sheets = wb_load.get_sheet_names()
+# ws_load=wb_load.get_sheet_by_name(sheets[0])
+# data=[]
+# for i in range(1,24):
+#     data.append(ws_load.cell(row=1, column=i).value)
+#
+# print(data)
+
+
+# a='2.对焊端部厚度与相连管道的壁厚相同。'
+# print(a[0])
+
+# header_name=['NOTE_ID', 'SERVICE_SOURCE', 'NOTE_KEY', 'NOTE', 'BATCH_ID', 'CREATED_BY', 'CREATION_DATE',
+#              'LAST_UPDATED_BY', 'LAST_UPDATE_DATE', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY',
+#              'ATTRIBUTE1', 'ATTRIBUTE2', 'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6',
+#              'ATTRIBUTE7', 'ATTRIBUTE8', 'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12',
+#              'ATTRIBUTE13', 'ATTRIBUTE14', 'ATTRIBUTE15']
+# data=[]
+# for i in header_name:
+#     i=':'+i+','
+#     data.append(i)
+# a=''.join(data)
+# print(a)
+# today_time='2016/7/29'
+# creation_date=last_update_date=today_time
+# print(creation_date,last_update_date)
+# header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
+#              'LAST_UPDATED_BY', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
+#              'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
+#              'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13',
+#              'ATTRIBUTE14', 'ATTRIBUTE15']
+# comments=input('请输入一段描述方便自己日后恢复数据:')
+# batch_id=1
+# creation_date=last_update_date='2016/7/29'
+# data=[]
+# created_by=last_update_by=0
+# last_update_login=1
+# data.append(batch_id);data.append(comments);data.append(creation_date);data.append(last_update_date)
+# data.append(created_by);data.append(last_update_by);data.append(last_update_login)#目前没想到追加的好方式，打算自己造一个轮子批量append
+# print(data)
+# row=dict(zip(header_name,data))
+# print(row)
+# print(len(row))
+# row=[]
+# for i in header_name:
+#     i=':'+i+','
+#     row.append(i)
+# a=''.join(row)
+# print(a)
+
+b={ 'BATCH_ID':1, 'COMMENTS': 'test','CREATION_DATE': '2016/7/29','LAST_UPDATE_DATE': '2016/7/29','CREATED_BY':0, 'LAST_UPDATED_BY':1,'LAST_UPDATE_LOGIN':1,}
+print(len(b))
+print(b)
 conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
 cur =conn.cursor()
-r= cur.execute("select max(batch_id) from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T")
-result=cur.fetchone()
-new_result=list(result)
-print(new_result[0])
+r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN)", b)
+conn.commit()
+print('数据已经导入成功')
+#
+# header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
+#              'LAST_UPDATED_BY', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
+#              'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
+#              'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13',
+#              'ATTRIBUTE14', 'ATTRIBUTE15']
+# a=[]
+# for i in header_name:
+#     i=i+','
+#     a.append(i)
+# print(''.join(a))

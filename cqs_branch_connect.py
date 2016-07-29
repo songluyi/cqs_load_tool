@@ -83,9 +83,6 @@ class cqs_branch_connect(object):
         print('已经完成管道连接表的excel生成')
 
 if __name__ == '__main__':
-    # ex = futures.ThreadPoolExecutor(max_workers=8)
-    # pool=ThreadPool(4)
-
     cqs=cqs_branch_connect()
     name_list=cqs_pt_rating().get_path()
     connection_id=get_connectionid()
@@ -95,15 +92,14 @@ if __name__ == '__main__':
     cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
     excel_name='new管道连接.xlsx'
     data_list=compliment(header_name,excel_name)
-    # pool_size=multiprocessing.cpu_count()*4
-    # pool=multiprocessing.Pool(processes=pool_size)
     start_time=time.time()
     insert_db(data_list)
-    # pool.map_async(insert_db,data_list)
-    # pool.close()
-    # pool.join()
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
     print('已经完成对管道连接表的插入，谢谢使用')
+    insert_batch_db(today_time)
+
+
+
 
 

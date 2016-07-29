@@ -50,6 +50,31 @@ def insert_db(row):
     conn.commit()
     print('数据已经导入成功')
 
+def insert_batch_db(today_time):
+    header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
+                 'LAST_UPDATED_BY', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
+                 'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
+                 'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13',
+                 'ATTRIBUTE14', 'ATTRIBUTE15']
+    COMMENTS=input('请输入一段描述方便自己日后恢复数据:')
+    BATCH_ID=get_batch_id()
+    CREATION_DATE=today_time;LAST_UPDATE_DATE=today_time
+    data=[]
+    CREATED_BY=0;LAST_UPDATED_BY=0
+    LAST_UPDATE_LOGIN=1
+    data.append(BATCH_ID);data.append(COMMENTS);data.append(CREATION_DATE);data.append(LAST_UPDATE_DATE)
+    data.append(CREATED_BY);data.append(LAST_UPDATED_BY);data.append(LAST_UPDATE_LOGIN)#目前没想到追加的好方式，打算自己造一个轮子批量append
+    row=dict(zip(header_name,data))
+    print(row)
+    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    cur =conn.cursor()
+    r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN)", row)
+    conn.commit()
+    print('数据已经导入成功')
+
+
+
+
 
 
 

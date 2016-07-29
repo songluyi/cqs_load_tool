@@ -27,6 +27,8 @@ Cls
 @ echo.            导入等级表的管道温度压力额定表 → 请输入4
 @ echo.
 @ echo.            导入等级表的支管连接表 → 请输入5
+@ echo.
+@ echo.            导入等级表的注释表 → 请输入6
 @ echo. 
 @ echo.   C.       导入全部目录下excel数据→ 请输入9
 @ echo.  
@@ -37,6 +39,7 @@ if /i "%xj%"=="2" Goto Item
 if /i "%xj%"=="3" Goto Thickness
 if /i "%xj%"=="4" Goto Rating
 if /i "%xj%"=="5" Goto Connect
+if /i "%xj%"=="6" Goto Note
 if /i "%xj%"=="9" Goto All
 
 @ echo.
@@ -83,22 +86,33 @@ ECHO 　　　已经执行完成正在返回菜单..请稍等..
 ping -n 3 127.1>nul 
 goto menu
 
+:Note
+@ echo.
+ECHO 　　　正在执行中..请稍等..
+python cqs_note.py
+ECHO 　　　已经执行完成正在返回菜单..请稍等..
+ping -n 3 127.1>nul 
+goto menu
+
 :All
 @ echo.
 ECHO 　　　执行索引表插入..请稍等..
-python cqs_index.py
+start python "cqs_index.py"
 @ echo.
 ECHO 　　　执行元件表插入..请稍等..
-python cqs_items.py
+start python "cqs_items.py"
 @ echo.
 ECHO 　　　执行壁厚表插入..请稍等..
-python cqs_pipe_thickness.py
+start python "cqs_pipe_thickness.py"
 @ echo.
 ECHO 　　　执行压力温度表插入..请稍等..
-python cqs_pt_rating.py
+start python "cqs_pt_rating.py"
+@ echo.
+ECHO 　　　执行注释表插入..请稍等..
+start python "cqs_note.py"
 @ echo.
 ECHO 　　　执行支管连接表插入 数据会达到上万行 ..请耐心等待..
-python cqs_branch_connect.py
-ECHO 　　　已经执行完成正在返回菜单..请稍等..
-ping -n 3 127.1>nul 
+python "cqs_branch_connect.py"
+ECHO 　　　由于是并行运行python脚本..当六个框均运行结束退出后方可退出..
+ping -n 5 127.1>nul 
 goto menu
