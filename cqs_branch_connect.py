@@ -2,7 +2,7 @@
 # 2016/7/20 15:36
 """
 -------------------------------------------------------------------------------
-Function:
+Function:   支管连接表插入数据库主程序
 Version:    1.0
 Author:     SLY
 Contact:    slysly759@gmail.com 
@@ -13,9 +13,6 @@ import os,sys
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from cqs_branch_connect_database import *
-# from multiprocessing.dummy import Pool as ThreadPool
-# from multiprocessing import Process, Manager
-import multiprocessing
 import threading
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 from cqs_pt_rating_database import compliment

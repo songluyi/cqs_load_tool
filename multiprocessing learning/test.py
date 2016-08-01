@@ -209,14 +209,14 @@ import cx_Oracle
 # a=''.join(row)
 # print(a)
 
-b={ 'BATCH_ID':1, 'COMMENTS': 'test','CREATION_DATE': '2016/7/29','LAST_UPDATE_DATE': '2016/7/29','CREATED_BY':0, 'LAST_UPDATED_BY':1,'LAST_UPDATE_LOGIN':1,}
-print(len(b))
-print(b)
-conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
-cur =conn.cursor()
-r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN)", b)
-conn.commit()
-print('数据已经导入成功')
+# b={ 'BATCH_ID':1, 'COMMENTS': 'test','CREATION_DATE': '2016/7/29','LAST_UPDATE_DATE': '2016/7/29','CREATED_BY':0, 'LAST_UPDATED_BY':1,'LAST_UPDATE_LOGIN':1,}
+# print(len(b))
+# print(b)
+# conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+# cur =conn.cursor()
+# r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN)", b)
+# conn.commit()
+# print('数据已经导入成功')
 #
 # header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
 #              'LAST_UPDATED_BY', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
@@ -228,3 +228,7 @@ print('数据已经导入成功')
 #     i=i+','
 #     a.append(i)
 # print(''.join(a))
+
+a='{"Count":1411,"CarNumber":11674}'
+b=eval(a)
+print(type(b))

@@ -2,7 +2,7 @@
 # 2016/7/19 15:08
 """
 -------------------------------------------------------------------------------
-Function:
+Function:   database of pt_rating
 Version:    1.0
 Author:     SLY
 Contact:    slysly759@gmail.com 

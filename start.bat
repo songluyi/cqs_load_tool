@@ -31,6 +31,8 @@ Cls
 @ echo.            导入等级表的注释表 → 请输入6
 @ echo. 
 @ echo.   C.       导入全部目录下excel数据→ 请输入9
+@ echo. 
+@ echo.   D.       恢复数据库中历史版本的数据→ 请输入10
 @ echo.  
 @ echo.            PS:目录下生成相应的excel文件当导入发生问题时，可备用。
 set /p xj=     输入数字按回车：
@@ -41,6 +43,7 @@ if /i "%xj%"=="4" Goto Rating
 if /i "%xj%"=="5" Goto Connect
 if /i "%xj%"=="6" Goto Note
 if /i "%xj%"=="9" Goto All
+if /i "%xj%"=="10" Goto recover 
 
 @ echo.
 echo      选择无效，请重新输入
@@ -115,4 +118,12 @@ ECHO 　　　执行支管连接表插入 数据会达到上万行 ..请耐心等待..
 python "cqs_branch_connect.py"
 ECHO 　　　由于是并行运行python脚本..当六个框均运行结束退出后方可退出..
 ping -n 5 127.1>nul 
+goto menu
+
+:Recover
+@ echo.
+ECHO 　　　正在执行中..请稍等..
+python recover_db.py
+ECHO 　　　已经执行完成正在返回菜单..请稍等..
+ping -n 3 127.1>nul 
 goto menu

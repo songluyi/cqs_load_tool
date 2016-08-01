@@ -14,11 +14,10 @@ from openpyxl import Workbook
 from openpyxl import load_workbook
 import time
 from cqs_note_database import *
-from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
+from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数 我将生成新excel数据读入成list封装成一个函数
 from cqs_pt_rating_database import compliment
 import multiprocessing
 from openpyxl.styles import numbers
-from concurrent import futures#采用3.x新出来的多进程
 import time
 header_name=['NOTE_ID', 'SERVICE_SOURCE', 'NOTE_KEY', 'NOTE', 'BATCH_ID', 'CREATED_BY', 'CREATION_DATE',
              'LAST_UPDATED_BY', 'LAST_UPDATE_DATE', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY',

@@ -2,7 +2,7 @@
 # 2016/7/19 19:28
 """
 -------------------------------------------------------------------------------
-Function:
+Function:   database of item
 Version:    1.0
 Author:     SLY
 Contact:    slysly759@gmail.com 
