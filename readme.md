@@ -1,9 +1,10 @@
 #CQS管道数据导入工具 (C)
 
 ##使用前环境要求：
-1.windows或者Mac 不过mac 批处理脚本无法用，只能自己到python IDE手敲
-2.python3.x 版本 带path安装，即有python3.x环境
-3.通过以下cmd命令安装依赖的库
+1. windows或者Mac 不过mac 批处理脚本无法用，只能自己到python IDE手敲
+2. python3.x 版本 带path安装，即有python3.x环境
+3. 通过以下cmd命令安装依赖的库
+
   pip install openpyxl
   
   pip install cx_Oracle
@@ -25,7 +26,7 @@
 ##注意事项：
 1. excel文件的命名：索引表一定要包含"索引表"三个字，等级表同理，其他随便命名
 
-  示范：xxxx001索引表.xlsx
+   示范：xxxx001索引表.xlsx
   
 2. excel 文件的格式：
    要导入的excel格式要和范本文件夹下的示范excel一致，这样才不会出错
