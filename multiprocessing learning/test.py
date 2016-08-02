@@ -228,7 +228,80 @@ import cx_Oracle
 #     i=i+','
 #     a.append(i)
 # print(''.join(a))
+#
+# a='{"Count":1411,"CarNumber":11674}'
+# b=eval(a)
+# print(type(b))
 
-a='{"Count":1411,"CarNumber":11674}'
-b=eval(a)
-print(type(b))
+#-*-coding:utf8-*-
+# import os
+# import sys
+# import requests
+# from bs4 import BeautifulSoup
+# import re
+# import math
+#
+#
+# if __name__ == '__main__':
+#
+#     #存放页面url的列表
+#     pageUrlList = []
+#
+#     #设定初始url
+#     initUrl = 'http://newseed.pedaily.cn/invest/p1'
+#     #设定targetUrl链接存储文件名
+#     urlFileName = 'targetuurl.txt'
+#
+#     #当前文件所在目录
+#     fileDir = os.path.abspath(os.path.dirname(sys.argv[0]))
+#     #文本操作根目录
+#     dataRootDir = os.path.join(fileDir)
+#
+#     #提示信息
+#     print('开始获取targetUrl地址...')
+#     #模拟请求头
+#     header = { 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36' }
+#     #目标链接地址文件路径
+#     path = dataRootDir + '/' + urlFileName
+#
+#     #获取总记录数
+#     html = requests.get(initUrl,headers = header)
+#     html.encoding = 'utf-8'
+#     htmlText = html.text
+#     soupTotalRecord = BeautifulSoup(htmlText)
+#     if soupTotalRecord.find('div',class_='search-title').find('span',id='total'):
+#         totalRecord = soupTotalRecord.find('div',class_='search-title').find('span',id='total').string.strip()
+#
+#     #计算总页数
+#     if totalRecord:
+#         if int(int(totalRecord) % 10) == 0:
+#             totalPage =  int(int(totalRecord) / 10)
+#         else:
+#             totalPage = math.ceil(int(totalRecord) / 10)
+#
+#     #生成页面链接pageUrl列表
+#     beginPage = re.search('/invest/p(\d+)',initUrl,re.S).group(1)
+#     for i in range(int(beginPage),totalPage+1):
+#         pageUrl = re.sub('/invest/p\d+','/invest/p%s' % i,initUrl,re.S)
+#         pageUrlList.append(pageUrl)
+#
+#     #根据页面链接pageUrl生成targetUrl
+#     i = 1
+#     for perPageUrlNum in range(0,len(pageUrlList)):   #这里考虑到列表取值
+#         html = requests.get(pageUrlList[perPageUrlNum],headers = header)
+#         html.encoding = 'utf-8'
+#         htmlText = html.text
+#         soupTargetUrl = BeautifulSoup(htmlText)
+#         tempTags = soupTargetUrl.find_all('td',class_='td6')
+#         for item in tempTags:
+#             item = str(item)
+#             seed = re.search('href="(.*?)"\s',item,re.S).group(1)
+#             #形成目标url链接
+#             targetUrl = 'http://newseed.pedaily.cn' + seed
+#             """targetUrlList.append(targetUrl)"""
+#             #将链接写入文本
+#             f = open(path,'a',encoding='utf-8')
+#             f.writelines(targetUrl + '\n')
+#             f.close()
+#             print('第 【' + str(i) + '】 条targetUrl已经写入...')
+#             i += 1

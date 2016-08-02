@@ -56,7 +56,7 @@ def insert_batch_db(today_time):
                  'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
                  'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13',
                  'ATTRIBUTE14', 'ATTRIBUTE15']
-    COMMENTS=input('请输入一段描述方便自己日后恢复数据:')
+    COMMENTS=input('请输入一段描述方便自己日后恢复数据,如果是续传请随意填写不会导入到数据库:')
     BATCH_ID=get_batch_id()
     CREATION_DATE=today_time;LAST_UPDATE_DATE=today_time
     data=[]
