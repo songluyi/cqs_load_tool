@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31addb5a-dbd9-410b-ab8a-6feff94dd797" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about_ftp.py" afterPath="$PROJECT_DIR$/about_ftp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="fightpython3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,53 +61,9 @@
       <file leaf-file-name="about_ftp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about_ftp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1368">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding>
-                <element signature="e#298#313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_branch_connect.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="2052">
-              <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
-              <folding>
-                <element signature="e#303#316#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="continue_load.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/continue_load.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1292">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-              <folding>
-                <marker date="1470127562233" expanded="true" signature="445:503" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-                <marker date="1470127562233" expanded="true" signature="752:835" placeholder="update CUX.C..." />
-                <marker date="1470127562233" expanded="true" signature="871:954" placeholder="update cux.c..." />
-                <marker date="1470127562233" expanded="true" signature="995:1082" placeholder="update cux.c..." />
-                <marker date="1470127562233" expanded="true" signature="1123:1215" placeholder="update cux.c..." />
-                <marker date="1470127562233" expanded="true" signature="1254:1346" placeholder="update CUX.C..." />
-                <marker date="1470127562233" expanded="true" signature="1382:1465" placeholder="update cux.c..." />
-                <marker date="1470127562233" expanded="true" signature="2230:2315" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2262:2315" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
-                <marker date="1470127562233" expanded="true" signature="2352:2437" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2384:2437" placeholder="select * fro..cux_cqs_items_his_t..." />
-                <marker date="1470127562233" expanded="true" signature="2479:2572" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2515:2572" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
-                <marker date="1470127562233" expanded="true" signature="2619:2722" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2660:2722" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
-                <marker date="1470127562233" expanded="true" signature="2765:2868" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2806:2868" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-                <marker date="1470127562233" expanded="true" signature="2905:2990" placeholder="insert into ..." />
-                <marker date="1470127562233" expanded="true" signature="2937:2990" placeholder="select * fro..cux_cqs_notes_his_t..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1349">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +74,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8246528" vertical-offset="0" max-vertical-offset="589">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8246528" vertical-offset="0" max-vertical-offset="608">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -214,9 +171,10 @@
         <option value="$PROJECT_DIR$/cqs_branch_connect_database.py" />
         <option value="$PROJECT_DIR$/cqs_branch_connect.py" />
         <option value="$PROJECT_DIR$/new_ftp.py" />
-        <option value="$PROJECT_DIR$/about_ftp.py" />
         <option value="$PROJECT_DIR$/ftp.py" />
         <option value="$PROJECT_DIR$/continue_load.py" />
+        <option value="$PROJECT_DIR$/about_ftp.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -675,11 +633,6 @@
           <line>11</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/about_ftp.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1059,30 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1539" max-vertical-offset="2052">
-          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
-          <folding>
-            <element signature="e#303#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multiprocessing learning/carspider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_ftp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1368">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#298#313#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,31 +1036,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1268533" vertical-offset="399" max-vertical-offset="2052">
+          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+          <folding>
+            <element signature="e#303#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/continue_load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1292">
+        <state vertical-scroll-proportion="0.8299663" vertical-offset="685" max-vertical-offset="1292">
           <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
           <folding>
-            <marker date="1470127562233" expanded="true" signature="445:503" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1470127562233" expanded="true" signature="752:835" placeholder="update CUX.C..." />
-            <marker date="1470127562233" expanded="true" signature="871:954" placeholder="update cux.c..." />
-            <marker date="1470127562233" expanded="true" signature="995:1082" placeholder="update cux.c..." />
-            <marker date="1470127562233" expanded="true" signature="1123:1215" placeholder="update cux.c..." />
-            <marker date="1470127562233" expanded="true" signature="1254:1346" placeholder="update CUX.C..." />
-            <marker date="1470127562233" expanded="true" signature="1382:1465" placeholder="update cux.c..." />
-            <marker date="1470127562233" expanded="true" signature="2230:2315" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2262:2315" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
-            <marker date="1470127562233" expanded="true" signature="2352:2437" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2384:2437" placeholder="select * fro..cux_cqs_items_his_t..." />
-            <marker date="1470127562233" expanded="true" signature="2479:2572" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2515:2572" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
-            <marker date="1470127562233" expanded="true" signature="2619:2722" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2660:2722" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
-            <marker date="1470127562233" expanded="true" signature="2765:2868" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2806:2868" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1470127562233" expanded="true" signature="2905:2990" placeholder="insert into ..." />
-            <marker date="1470127562233" expanded="true" signature="2937:2990" placeholder="select * fro..cux_cqs_notes_his_t..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update CUX.C..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update cux.c..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update cux.c..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update cux.c..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update CUX.C..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="update cux.c..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470127562233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_notes_his_t..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_ftp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1349">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,8 +1087,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8246528" vertical-offset="0" max-vertical-offset="589">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8246528" vertical-offset="0" max-vertical-offset="608">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -11,7 +11,6 @@ Contact:    slysly759@gmail.com
 """
 import paramiko
 import os,time,shutil
-from ftplib import FTP
 from cqs_branch_connect_database import get_batch_id
 def get_path():
     import os

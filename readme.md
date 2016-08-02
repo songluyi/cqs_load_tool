@@ -6,6 +6,7 @@
 3.通过以下cmd命令安装依赖的库
   pip install openpyxl
   pip install cx_Oracle
+  pip install paramiko
   注意，其中的cx_Oracle有可能在你pip install 的时候报错,这时候请去官网下载exe
   或者网上有专门的教程，http://www.cnblogs.com/restran/p/4787609.html 按照步骤
   来就好
@@ -21,5 +22,5 @@
 1.excel文件的命名：索引表一定要包含"索引表"三个字，等级表同理，其他随便命名
   示范：xxxx001索引表.xlsx
 2.excel 文件的格式：
-  要导入的excel格式要和范本文件夹下的示范excel一致，这样基本不会出错
+  要导入的excel格式要和范本文件夹下的示范excel一致，这样才不会出错
 3.不要将无关紧要的excel放置到本目录谢谢
