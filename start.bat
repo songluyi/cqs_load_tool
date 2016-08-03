@@ -5,7 +5,7 @@ Rd "%WinDir%\system32\test_permissions" >NUL 2>NUL
 Md "%WinDir%\System32\test_permissions" 2>NUL||(Echo 请使用右键管理员身份运行！&&Pause >nul&&Exit)
 Rd "%WinDir%\System32\test_permissions" 2>NUL
 SetLocal EnableDelayedExpansion
-
+cd bin
 :Menu
 Cls
 @ echo.　
@@ -16,6 +16,7 @@ Cls
 @ echo.            ##  #### ##       ##   ##    ##  ##  #### 
 @ echo.            ##   ### ##       ##    ##   ##  ##   ### 
 @ echo.            ##    ## ######## ##     ## #### ##    ## 
+@ echo.                                              ---NIMS
 @ echo.
 @ echo.　　　　　         菜 单 选 项
 @ echo.
@@ -36,7 +37,7 @@ if /i "%xj%"=="3" Goto recover
 @ echo.
 ECHO 　　　warning:由于是并行运行python脚本..当六个框均运行结束退出后方可退出..
 ECHO 　　　执行索引表插入..请稍等..
-start python "cqs_index.py"
+start python "/bin/cqs_index.py"
 @ echo.
 ECHO 　　　执行元件表插入..请稍等..
 start python "cqs_items.py"
