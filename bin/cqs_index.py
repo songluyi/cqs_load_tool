@@ -42,7 +42,7 @@ class cqs_index(object):
             wb_load = load_workbook(filename=name)
             sheets = wb_load.get_sheet_names()
             ws_load = wb_load.get_sheet_by_name(sheets[0])
-            #获取catalog在excel的行数,在样例中输出为[7,9,13,30,38] 注意：有些excel文件这里在最后面不加"xxx类" 导致上一类别数据无法导入请加上
+            #获取catalog在excel的行数,在样例中输出为[7,9,13,30,38]
             catolog_line=[]
             bug_index_id=index_id
             for i in range(1,1000):
@@ -58,7 +58,7 @@ class cqs_index(object):
             nothing_id=last_one-first_one-len(catolog_line)+1
             line=1
             for count in range(0,len(catolog_line)-1):
-                for row in range(catolog_line[count],catolog_line[count+1]-1):#这里for循环我到时候会用yield来重写，for看起来很蠢
+                for row in range(catolog_line[count],catolog_line[count+1]-1):#根据确定的行和列遍历
                     line+=1
                     bug_index_id+=1
                     edit_index_id=int(index_id)+1
@@ -69,7 +69,7 @@ class cqs_index(object):
                     ws_write.cell(row=line+space_tab, column=2).value=ws_load.cell(row=row+1, column=1).value #写入INDEX_ORDER
                     ws_write.cell(row=line+space_tab, column=3).value=ws_load.cell(row=catolog_line[count], column=1).value #写入catalog
                     ws_write.cell(row=line+space_tab, column=4).value=ws_load.cell(row=row+1, column=2).value #写入SERVICES
-                    ws_write.cell(row=line+space_tab, column=5).value=ws_load.cell(row=row+1, column=3).value #写入DESIGN_TEMP_SOURCE 跳过了需要选择判断的内容，该内容用函数调用生成
+                    ws_write.cell(row=line+space_tab, column=5).value=ws_load.cell(row=row+1, column=3).value #写入DESIGN_TEMP_SOURCE
                     ws_write.cell(row=line+space_tab, column=9).value=ws_load.cell(row=row+1, column=4).value #写入DESIGN_PRES_SOURCE
                     ws_write.cell(row=line+space_tab, column=13).value=ws_load.cell(row=row+1, column=5).value #写入PIPING_MATL_CLASS
                     ws_write.cell(row=line+space_tab, column=14).value=ws_load.cell(row=row+1, column=6).value #写入BASIC_MATERIAL

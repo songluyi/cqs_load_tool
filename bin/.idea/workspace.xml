@@ -2,38 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31addb5a-dbd9-410b-ab8a-6feff94dd797" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\fightpython3\about_ftp.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\justonehelp.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\make_token.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_note.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_pipe_thickness.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_index.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_pipe_thickness_database.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\.idea\fightpython3.iml" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\test.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_pt_rating_database.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\carspider.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_items.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\Test02_管道材料等级表.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_branch_connect.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_index_database.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\recover_db.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\.idea\misc.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\fightpython3\continue_load.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\targetuurl.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\Test01_管道材料等级索引表.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_branch_connect.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../readme.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_note.py" afterPath="" />
       <change type="DELETED" beforePath="E:\fightpython3\cqs_note_database.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_branch_connect_database.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_pt_rating.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\cqs_items_database.py" afterPath="" />
       <change type="DELETED" beforePath="E:\fightpython3\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\fightpython3\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\carspider.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_items_database.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_pipe_thickness.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\Test02_管道材料等级表.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\about_ftp.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\.idea\fightpython3.iml" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_pipe_thickness_database.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_pt_rating_database.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\test.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_pt_rating.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\targetuurl.txt" afterPath="" />
       <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\多线程学习.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="E:\fightpython3\bin\start.bat" afterPath="E:\fightpython3\bin\start.bat" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_index_database.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\Test01_管道材料等级索引表.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\justonehelp.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_branch_connect_database.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\multiprocessing learning\make_token.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\cqs_index.py" afterPath="" />
+      <change type="DELETED" beforePath="E:\fightpython3\recover_db.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="E:\fightpython3\bin\start.bat" afterPath="E:\fightpython3\bin\start.bat" />
     </list>
     <ignored path="fightpython3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,20 +50,22 @@
     <SUITE FILE_PATH="coverage/fightpython3$cqs_note.coverage" NAME="cqs_note Coverage Results" MODIFIED="1469760567972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_pt_rating_database.coverage" NAME="cqs_pt_rating_database Coverage Results" MODIFIED="1468998166243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$spider.coverage" NAME="天眼查的小小spider Coverage Results" MODIFIED="1469515668718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/python learning/slylearnpython" />
+    <SUITE FILE_PATH="coverage/bin$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1470374463312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$new_ftp.coverage" NAME="new_ftp Coverage Results" MODIFIED="1470050543527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_branch_connect_database.coverage" NAME="cqs_branch_connect_database Coverage Results" MODIFIED="1469763482666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$recover_db.coverage" NAME="recover_db Coverage Results" MODIFIED="1469779481072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/bin$test.coverage" NAME="test Coverage Results" MODIFIED="1470213745126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/bin$test.coverage" NAME="test Coverage Results" MODIFIED="1470371630045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$test.coverage" NAME="test Coverage Results" MODIFIED="1470199660001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$ftp.coverage" NAME="ftp Coverage Results" MODIFIED="1470125156496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$about_ftp.coverage" NAME="about_ftp Coverage Results" MODIFIED="1470199774448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/bin$cqs_index.coverage" NAME="cqs_index Coverage Results" MODIFIED="1470216608236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bin$cqs_index.coverage" NAME="cqs_index Coverage Results" MODIFIED="1470294639972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_items_database.coverage" NAME="cqs_items_database Coverage Results" MODIFIED="1469693053780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_branch_connect.coverage" NAME="cqs_branch_connect Coverage Results" MODIFIED="1470048016659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_items.coverage" NAME="cqs_items Coverage Results" MODIFIED="1469693059163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_pt_rating.coverage" NAME="cqs_pt_rating Coverage Results" MODIFIED="1469694571425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1469781662417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_new.coverage" NAME="cqs_new Coverage Results" MODIFIED="1469008463782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bin$recover_db.coverage" NAME="recover_db Coverage Results" MODIFIED="1470295966747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_index.coverage" NAME="cqs_index Coverage Results" MODIFIED="1469692468034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$carspider.coverage" NAME="carspider Coverage Results" MODIFIED="1469928389676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocessing learning" />
     <SUITE FILE_PATH="coverage/fightpython3$continue_load.coverage" NAME="continue_load Coverage Results" MODIFIED="1470039212806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -71,11 +73,13 @@
     <SUITE FILE_PATH="coverage/bin$about_ftp.coverage" NAME="about_ftp Coverage Results" MODIFIED="1470218234494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/fightpython3$make_token.coverage" NAME="make_token Coverage Results" MODIFIED="1469611676309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocessing learning" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_pipe_thickness_database.coverage" NAME="cqs_pipe_thickness_database Coverage Results" MODIFIED="1469693978926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bin$check_legal.coverage" NAME="check_legal Coverage Results" MODIFIED="1470374881406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$database.coverage" NAME="database Coverage Results" MODIFIED="1468903070807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1470210873588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs.coverage" NAME="cqs Coverage Results" MODIFIED="1468910742101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_pipe_thickness__1_.coverage" NAME="cqs_pipe_thickness (1) Coverage Results" MODIFIED="1469090871796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/管道导入小工具" />
     <SUITE FILE_PATH="coverage/fightpython3$branch_test.coverage" NAME="branch_test Coverage Results" MODIFIED="1469098710898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bin$delete_db.coverage" NAME="delete_db Coverage Results" MODIFIED="1470361100121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$cqs_pipe_thickness.coverage" NAME="cqs_pipe_thickness Coverage Results" MODIFIED="1469694003153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fightpython3$justonehelp.coverage" NAME="justonehelp Coverage Results" MODIFIED="1469436096116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocessing learning" />
     <SUITE FILE_PATH="coverage/fightpython3$excel_convert.coverage" NAME="excel_convert Coverage Results" MODIFIED="1469003426638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -92,91 +96,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cqs_pt_rating.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+      <file leaf-file-name="cqs_index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cqs_index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="2128">
-              <caret line="77" column="79" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
-              <folding>
-                <element signature="e#306#315#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="3344">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about_ftp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/about_ftp.py">
+      <file leaf-file-name="check_legal.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/check_legal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.87219733" vertical-offset="884" max-vertical-offset="1501">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.43564355" vertical-offset="489" max-vertical-offset="1653">
+              <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
               <folding>
-                <element signature="e#298#313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_branch_connect.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="2052">
-              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-              <folding>
-                <element signature="e#303#316#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="2109">
-              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-              <folding>
-                <element signature="e#305#314#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_note.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_note.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2166" max-vertical-offset="2793">
-              <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
-              <folding>
-                <element signature="e#287#296#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_pipe_thickness.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_pipe_thickness.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1368" max-vertical-offset="1900">
-              <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
-              <folding>
-                <element signature="e#301#310#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cqs_pt_rating_database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_pt_rating_database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="963" max-vertical-offset="1406">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-              <folding>
-                <element signature="e#311#330#0" expanded="true" />
-                <marker date="1470216516731" expanded="true" signature="507:552" placeholder="select PT_ID..cux_cqs_pt_rating_his_t..." />
-                <marker date="1470216516731" expanded="true" signature="816:869" placeholder="select max(b..cux_cqs_pt_rating_his_t..." />
-                <marker date="1470216516731" expanded="true" signature="1086:1141" placeholder="select pt_or..cux_cqs_pt_rating_his_t..." />
-                <marker date="1470216516731" expanded="true" signature="1481:1932" placeholder="INSERT INTO ..." />
-                <marker date="1470216516731" expanded="true" signature="1959:2036" placeholder="insert into ..." />
-                <marker date="1470216516731" expanded="true" signature="1999:2036" placeholder="select * fro..cux_cqs_pt_rating_t..." />
+                <element signature="e#286#316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,8 +121,8 @@
       <file leaf-file-name="cqs_index_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cqs_index_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1368">
-              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1368">
+              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
               <folding>
                 <element signature="e#311#330#0" expanded="true" />
                 <marker date="1470216516752" expanded="true" signature="497:546" placeholder="select max(i..CUX_CQS_INDEX_HIS_T..." />
@@ -199,13 +135,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cqs_index.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cqs_index.py">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="3344">
-              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="494">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cqs_pipe_thickness.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cqs_pipe_thickness.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1786">
+              <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cqs_pt_rating.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2052">
+              <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about_ftp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about_ftp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1406">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
-                <element signature="e#314#330#0" expanded="true" />
+                <element signature="e#298#313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,25 +208,28 @@
         <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/multiprocessing learning/carspider.py" />
         <option value="$PROJECT_DIR$/multiprocessing learning/test.py" />
-        <option value="$PROJECT_DIR$/recover_db.py" />
-        <option value="$PROJECT_DIR$/cqs_branch_connect_database.py" />
         <option value="$PROJECT_DIR$/new_ftp.py" />
         <option value="$PROJECT_DIR$/ftp.py" />
         <option value="$PROJECT_DIR$/continue_load.py" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/bin/test.py" />
         <option value="$PROJECT_DIR$/bin/cqs_pt_rating.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/cqs_pipe_thickness_database.py" />
         <option value="$PROJECT_DIR$/cqs_pt_rating_database.py" />
         <option value="$PROJECT_DIR$/cqs_index_database.py" />
-        <option value="$PROJECT_DIR$/cqs_index.py" />
         <option value="$PROJECT_DIR$/cqs_pt_rating.py" />
         <option value="$PROJECT_DIR$/cqs_branch_connect.py" />
         <option value="$PROJECT_DIR$/cqs_items.py" />
         <option value="$PROJECT_DIR$/cqs_note.py" />
         <option value="$PROJECT_DIR$/cqs_pipe_thickness.py" />
+        <option value="$PROJECT_DIR$/cqs_branch_connect_database.py" />
+        <option value="$PROJECT_DIR$/recover_db.py" />
+        <option value="$PROJECT_DIR$/delete_db.py" />
+        <option value="$PROJECT_DIR$/cqs_index.py" />
         <option value="$PROJECT_DIR$/about_ftp.py" />
+        <option value="$PROJECT_DIR$/might_help.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/check_legal.py" />
       </list>
     </option>
   </component>
@@ -270,7 +239,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -296,7 +265,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,6 +285,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -337,8 +306,8 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.about_ftp">
-    <configuration default="false" name="ftp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.check_legal">
+    <configuration default="false" name="check_legal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -349,31 +318,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="fightpython3" />
+      <module name="bin" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_legal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="delete_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="fightpython3" />
+      <module name="bin" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/delete_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="recover_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bin" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recover_db.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -387,44 +374,20 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bin" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="E:\fightpython3\bin\test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="about_ftp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bin" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/about_ftp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cqs_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -437,7 +400,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bin" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cqs_index.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -633,19 +596,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ftp" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.about_ftp" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cqs_index" />
+      <item index="0" class="java.lang.String" itemvalue="Python.check_legal" />
+      <item index="1" class="java.lang.String" itemvalue="Python.delete_db" />
+      <item index="2" class="java.lang.String" itemvalue="Python.recover_db" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.about_ftp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cqs_index" />
+        <item index="0" class="java.lang.String" itemvalue="Python.check_legal" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ftp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.delete_db" />
+        <item index="4" class="java.lang.String" itemvalue="Python.recover_db" />
       </list>
     </recent_temporary>
   </component>
@@ -670,7 +633,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -679,9 +642,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25314465" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3191824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24669604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -735,6 +698,285 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cqs_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2736" max-vertical-offset="3344">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_legal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="437">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_index_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1349">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding>
+            <element signature="e#311#330#0" expanded="true" />
+            <marker date="1470216516752" expanded="true" signature="497:546" placeholder="select max(i..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470216516752" expanded="true" signature="815:864" placeholder="select max(b..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470216516752" expanded="true" signature="1193:1829" placeholder="INSERT INTO ..." />
+            <marker date="1470216516752" expanded="true" signature="1856:1926" placeholder="insert into ..." />
+            <marker date="1470216516752" expanded="true" signature="1893:1926" placeholder="select * fro..cux_cqs_index_t..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1097" max-vertical-offset="1691">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recover_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1254">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_INDEX_T..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#311#0" expanded="true" />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_notes_his_t..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="941" max-vertical-offset="2128">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_legal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="342">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/continue_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1292">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3344">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1691">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recover_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1064">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_INDEX_T..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="941" max-vertical-offset="2128">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_legal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="342">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/continue_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1292">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3344">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1691">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recover_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1064">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_INDEX_T..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="941" max-vertical-offset="2128">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_legal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="342">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1691">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recover_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1064">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_INDEX_T..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/1013586911/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -788,69 +1030,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.375" vertical-offset="0" max-vertical-offset="1387">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80717486" vertical-offset="590" max-vertical-offset="2052">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_note.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12780268" vertical-offset="2166" max-vertical-offset="2793">
+          <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/continue_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7733333" vertical-offset="1097" max-vertical-offset="1691">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
           <folding>
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="select pipe_..cux_cqs_pipe_thickness_his_t..." />
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="select max(b..cux_cqs_pipe_thickness_his_t..." />
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="select pipe_..cux_cqs_pipe_thickness_his_t..." />
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1470215698891" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_t..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
+            <marker date="1470219588989" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4484537" vertical-offset="0" max-vertical-offset="1216">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="e#295#311#0" expanded="true" />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470361100032" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_notes_his_t..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recover_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.565923" vertical-offset="178" max-vertical-offset="1064">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state vertical-scroll-proportion="1.6159794" vertical-offset="0" max-vertical-offset="1254">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1469780668233" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_notes_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select batch..cux_cqs_batchs_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_INDEX_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_items_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pipe_thickness_his_t..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
+            <marker date="1470296495445" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_INDEX_T..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/about_ftp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7302231" vertical-offset="856" max-vertical-offset="1349">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1406">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
-            <element signature="e#1206#1227#0" expanded="true" />
+            <element signature="e#298#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cqs_pt_rating_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="963" max-vertical-offset="1406">
+        <state vertical-scroll-proportion="0.10230179" vertical-offset="929" max-vertical-offset="1368">
           <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
           <folding>
-            <element signature="e#311#330#0" expanded="true" />
-            <marker date="1470216516731" expanded="true" signature="507:552" placeholder="select PT_ID..cux_cqs_pt_rating_his_t..." />
-            <marker date="1470216516731" expanded="true" signature="816:869" placeholder="select max(b..cux_cqs_pt_rating_his_t..." />
-            <marker date="1470216516731" expanded="true" signature="1086:1141" placeholder="select pt_or..cux_cqs_pt_rating_his_t..." />
-            <marker date="1470216516731" expanded="true" signature="1481:1932" placeholder="INSERT INTO ..." />
-            <marker date="1470216516731" expanded="true" signature="1959:2036" placeholder="insert into ..." />
-            <marker date="1470216516731" expanded="true" signature="1999:2036" placeholder="select * fro..cux_cqs_pt_rating_t..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="select PT_ID..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="select max(b..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="select pt_or..cux_cqs_pt_rating_his_t..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1470216516731" expanded="true" signature="-1:-1" placeholder="select * fro..cux_cqs_pt_rating_t..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2052">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_pipe_thickness.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1786">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="3344">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cqs_items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73762375" vertical-offset="424" max-vertical-offset="1957">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cqs_index_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1368">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1368">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
           <folding>
             <element signature="e#311#330#0" expanded="true" />
             <marker date="1470216516752" expanded="true" signature="497:546" placeholder="select max(i..CUX_CQS_INDEX_HIS_T..." />
@@ -862,88 +1185,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_index.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="3344">
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-          <folding>
-            <element signature="e#314#330#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="494">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_branch_connect_database.py">
+    <entry file="file://$PROJECT_DIR$/check_legal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9300226" vertical-offset="855" max-vertical-offset="1653">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43564355" vertical-offset="489" max-vertical-offset="1653">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
           <folding>
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="select max(c..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="select max(b..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="select conn_..CUX_CQS_BRANCH_CONNECT_HIS_T..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="select * fro..CUX_CQS_BRANCH_CONNECT_T..." />
-            <marker date="1470040202432" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_branch_connect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="2052">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-          <folding>
-            <element signature="e#303#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="2109">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding>
-            <element signature="e#305#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_note.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2166" max-vertical-offset="2793">
-          <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
-          <folding>
-            <element signature="e#287#296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_pipe_thickness.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1368" max-vertical-offset="1900">
-          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
-          <folding>
-            <element signature="e#301#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cqs_pt_rating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="2128">
-          <caret line="77" column="79" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
-          <folding>
-            <element signature="e#306#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_ftp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87219733" vertical-offset="884" max-vertical-offset="1501">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding>
-            <element signature="e#298#313#0" expanded="true" />
+            <element signature="e#286#316#0" expanded="true" />
           </folding>
         </state>
       </provider>

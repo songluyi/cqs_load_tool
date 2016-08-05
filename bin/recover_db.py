@@ -10,10 +10,11 @@ Contact:    slysly759@gmail.com
 -------------------------------------------------------------------------------
 """
 import cx_Oracle
+
 def get_batch():
     conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
     cur =conn.cursor()
-    r=cur.execute("select batch_id,comments,creation_date from cux.cux_cqs_batchs_t order by batch_id")
+    r=cur.execute("select batch_id,comments,ATTRIBUTE_CATEGORY,creation_date from cux.cux_cqs_batchs_t order by batch_id")
     result=cur.fetchall()
     return result
 
@@ -42,10 +43,19 @@ def recover_batch(re_batch):
     r=cur.execute(sql_note)
     conn.commit()
     print('数据已经恢复成功')
-
-batch_list=get_batch()
-print("历史批次如下：")
-for batch in batch_list:
-    print('批次号：',batch[0],'批次备注信息：',batch[1],'录入时间：',batch[2])
-re_batch=int(input('请输入你需要恢复的批次号：'))
-recover_batch(re_batch)
+def get_valid_batchid():
+    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    cur =conn.cursor()
+    r= cur.execute("select max(batch_id) from CUX.CUX_CQS_INDEX_T")
+    result=cur.fetchone()
+    new_result=list(result)
+    return new_result[0]
+if __name__ == '__main__':
+    batch_list=get_batch()
+    valid_batchid=get_valid_batchid()
+    print('\n'+'当前有效批次为：',valid_batchid,'\n')
+    print("历史批次如下：")
+    for batch in batch_list:
+        print('批次号：',batch[0],'备注：',batch[1],'录入人：',batch[2],'时间：',batch[3])
+    re_batch=int(input('请输入你需要恢复的批次号：'))
+    recover_batch(re_batch)
