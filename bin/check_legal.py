@@ -17,6 +17,7 @@ import cqs_note_database
 import cqs_pipe_thickness_database
 import cqs_pt_rating_database
 import cqs_branch_connect_database
+import time
 def check_batch_id():
     index_batch_id=cqs_index_database.get_batch_id()
     item_batch_id=cqs_items_database.get_batch_id()
@@ -34,6 +35,7 @@ def check_batch_id():
         print('目前所有批次号正常')
     else:
         print('批次号可能存在异常，原因可能是导入异常数据导致，请进入PLSQL界面操作，保证批次号相同')
+        time.sleep(5)
 namelist=get_path()
 print(namelist)
 for name in namelist:

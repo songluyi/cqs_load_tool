@@ -48,11 +48,11 @@ class cqs_branch_connect(object):
             for page_name in sheets[1::2]:#循环样例应该为16.2 35.2 等
                 ws_load = wb_load.get_sheet_by_name(page_name)
                 check_row_lines=[]
-                for row in range(20,45):
+                for row in range(14,45):
                     if isinstance(ws_load.cell(row=row, column=3).value,int):
                         check_row_lines.append(row)
                 check_row=min(check_row_lines)
-                max_column=5+check_row
+                max_column=5+max(check_row_lines)-check_row
                 for column in range(5,max_column+1):
                     count=column-4
                     for row in range(check_row+count-1,44):

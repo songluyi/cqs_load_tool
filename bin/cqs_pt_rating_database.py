@@ -61,8 +61,8 @@ def compliment(header_name,name):
        excel_data=[]
        for column in range(1,len(header_name)+1):#循环取列值
            excel_data.append(ws_get_excel.cell(row=line, column=column).value)
-           if  isinstance(ws_get_excel.cell(row=line, column=column).value, int):#判定值如果为int类型改为float更符合oracle
-               excel_data[column-1]=float(excel_data[column-1])
+           # if  isinstance(ws_get_excel.cell(row=line, column=column).value, int):#判定值如果为int类型改为float更符合oracle
+           #     excel_data[column-1]=float(excel_data[column-1])
        make_dict=dict(zip(header_name,excel_data))
        line=line+1
        full_shit_list.append(make_dict)
