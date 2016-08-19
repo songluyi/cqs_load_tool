@@ -11,7 +11,8 @@ Contact:    slysly759@gmail.com
 """
 import cx_Oracle
 from recover_db import get_valid_batchid,get_batch
-
+from cqs_pt_rating_database import get_ini
+db_connect=get_ini()[0]
 def delete_batch(re_batch):
     #合成各个SQL插入语句
     sql_index='delete CUX.CUX_CQS_INDEX_HIS_T where batch_id='+str(re_batch)
@@ -21,7 +22,7 @@ def delete_batch(re_batch):
     sql_connection='delete CUX.CUX_CQS_BRANCH_CONNECT_HIS_T where batch_id='+str(re_batch)
     sql_note='delete cux.cux_cqs_notes_his_t where batch_id='+str(re_batch)
     sql_batch='delete cux.cux_cqs_batchs_t where batch_id='+str(re_batch)
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     #先执行清空数据语句
     r=cur.execute(sql_index)

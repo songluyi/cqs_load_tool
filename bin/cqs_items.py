@@ -69,13 +69,18 @@ class cqs_items(object):
                             ws_write.cell(row=line, column=3).value=item_order_number#写入item order number
                             item_order_number+=1
                             ws_write.cell(row=line, column=4).value=ws_load.cell(row=5, column=5).value#写入pip_matel_class
-                            ws_write.cell(row=line, column=5).value=ws_load.cell(row=catolog_line[count], column=1).value#写入item_catalog
-                            ws_write.cell(row=line, column=6).value=ws_load.cell(row=row, column=1).value#写入item_name
+                            ws_write.cell(row=line, column=5).value=str(ws_load.cell(row=catolog_line[count], column=1).value)#写入item_catalog
+                            ws_write.cell(row=line, column=6).value=str(ws_load.cell(row=row, column=1).value)#写入item_name
                             ws_write.cell(row=line, column=7).value=ws_load.cell(row=row, column=4).value#写入DN min
                             ws_write.cell(row=line, column=8).value=ws_load.cell(row=row, column=6).value#写入DN max
                             ws_write.cell(row=line, column=9).value=ws_load.cell(row=row, column=8).value#写入END_FACING
                             ws_write.cell(row=line, column=10).value=ws_load.cell(row=row, column=10).value#写入THK_RATING
-                            ws_write.cell(row=line, column=11).value=ws_load.cell(row=row, column=12).value#写入MATERIAL
+                            # print(ws_load.cell(row=row, column=12).value)
+                            # print(type(ws_load.cell(row=row, column=12).value))
+                            if ws_load.cell(row=row, column=12).value is None:
+                               ws_write.cell(row=line, column=11).value=''
+                            else:
+                                ws_write.cell(row=line, column=11).value=str(ws_load.cell(row=row, column=12).value)#写入MATERIAL
                             ws_write.cell(row=line, column=12).value=ws_load.cell(row=row, column=16).value#写入STANDARD_MODEL
                             ws_write.cell(row=line, column=13).value=ws_load.cell(row=row, column=20).value#写入STANDARD_MODEL
                             ws_write.cell(row=line, column=14).value=0#写入created by
@@ -90,8 +95,14 @@ if __name__ == '__main__':
     cqs=cqs_items()
     name_list=cqs_pt_rating().get_path()
     item_id=get_itemid()
+    if item_id is None:
+        item_id=0
     batch_id=get_batch_id()
+    if batch_id is None:
+        batch_id=0
     item_order_number=get_order_number()
+    if item_order_number is None:
+        item_order_number=0
     bug_item_id=0
     cqs.make_exceldata(name_list,bug_item_id,item_id,batch_id,item_order_number)
     excel_name='new元件表.xlsx'

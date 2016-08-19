@@ -39,7 +39,7 @@ class cqs_pt_rating(object):
                     FileList.append(os.path.join(root, f))
 
         for item in FileList:
-            print('检测到您目录下有如下excel文件 请确保他们是要提交的管道等级表')
+            print('检测到您目录下有如下excel文件 请确保他们是要提交')
             print(item)
         return FileList
 
@@ -93,9 +93,15 @@ if __name__ == '__main__':
     name_list=cqs.get_path()
     bug_pi_id=0
     pi_id=get_ptid()
+    if pi_id is None:
+        pi_id=0
     space_tab=0
     batch_id=get_batch_id()
+    if batch_id is None:
+        batch_id=0
     pt_order_number=get_order_number()
+    if pt_order_number is None:
+        pt_order_number=0
     cqs.make_exceldata(name_list,bug_pi_id,pi_id,batch_id,pt_order_number)
     excel_name='new压力温度.xlsx'
     data_list=compliment(header_name,excel_name)

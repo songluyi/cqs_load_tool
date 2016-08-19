@@ -10,15 +10,17 @@ Contact:    slysly759@gmail.com
 -------------------------------------------------------------------------------
 """
 import cx_Oracle
+from cqs_pt_rating_database import get_ini
+db_connect=get_ini()[0]
 def get_batch_id():
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r= cur.execute("select max(batch_id) from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T")
     result=cur.fetchone()
     new_result=list(result)
     return new_result[0]
 def continue_load_db():
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     change_batch_id=get_batch_id()-1
     sql_index='update CUX.CUX_CQS_INDEX_HIS_T set batch_id='+str(change_batch_id)+'where batch_id='+str(get_batch_id())

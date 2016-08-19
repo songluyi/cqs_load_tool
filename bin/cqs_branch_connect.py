@@ -83,8 +83,14 @@ if __name__ == '__main__':
     cqs=cqs_branch_connect()
     name_list=cqs_pt_rating().get_path()
     connection_id=get_connectionid()
+    if connection_id is None:
+        connection_id=0
     batch_id=get_batch_id()
+    if batch_id is None:
+        batch_id=0
     conn_order_number=get_order_number()
+    if conn_order_number is None:
+        conn_order_number=0
     bug_connection_id=0
     cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
     excel_name='new管道连接.xlsx'

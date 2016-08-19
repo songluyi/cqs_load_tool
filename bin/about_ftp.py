@@ -9,9 +9,15 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
-import paramiko
+import paramiko,re
 import os,time,shutil
 from cqs_branch_connect_database import get_batch_id
+
+def get_ini():
+    with open('setting.ini','r',errors='ignore') as f:
+        data=f.readlines()
+    return [data[4].replace('\n',''),data[5].replace('\n','')]
+db_connect=get_ini()[1]
 def get_path():
     import os
     current_path=os.path.abspath(os.path.join(os.path.dirname('cqs_index.py'),os.path.pardir))
@@ -27,7 +33,9 @@ def get_path():
             if f.find('表') != -1 and f.find('new')==-1:
                 FileList.append(os.path.join(root, f))
     return FileList
+
 if __name__ == '__main__':
+    ftp_ini=get_ini()[1]
     today_time=time.strftime("%Y-%m-%d %H-%M-%S", time.localtime())
     new_ftp_path=str(today_time)+' '+str(get_batch_id())
     parent_path=os.path.abspath(os.path.join(os.path.dirname('cqs_index.py'),os.path.pardir))
@@ -46,8 +54,13 @@ if __name__ == '__main__':
     namelist=get_path()
     count_index=1
     count_rate=1
-    ftp=paramiko.Transport(('127.0.0.1', 22))
-    ftp.connect(username='admin', password='admin', hostkey=None)
+    ftp_name=re.findall('(.*?)/',ftp_ini)
+    ftp_pass=re.findall('/(.*?)@',ftp_ini)
+    ftp_ip=re.findall('@(.*?):',ftp_ini)
+    row_ftp_port=re.findall(':\d*',ftp_ini)
+    ftp_port=row_ftp_port[0].replace(':','')
+    ftp=paramiko.Transport((ftp_ip[0], int(ftp_port)))
+    ftp.connect(username=ftp_name[0], password=ftp_pass[0], hostkey=None)
     sftp =paramiko.SFTPClient.from_transport(ftp)
     sftp.mkdir(new_ftp_path)
     print(sftp.listdir())

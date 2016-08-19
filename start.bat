@@ -1,4 +1,4 @@
-@ECHO OFF&PUSHD %~DP0 &TITLE 管道等级表+索引表批量导入工具
+@ECHO OFF&PUSHD %~DP0 &TITLE 管道材料等级表+索引表等批量导入工具
 mode con cols=70 lines=30
 color A
 Rd "%WinDir%\system32\test_permissions" >NUL 2>NUL
@@ -41,23 +41,23 @@ if /i "%xj%"=="5" Goto Delete
 
 :All
 @ echo.
-ECHO 　　　warning:并行运行python脚本..当六个框均运行结束退出后方可退出..
-ECHO 　　　执行索引表插入..请稍等..
-start python "/bin/cqs_index.py"
+ECHO 　　　warning:并行运行python脚本..当六个框均运行结束退出后进入主菜单方可退出..
+ECHO 　　　执行索引表：管道材料等级索引表插入..请稍等..
+start python "cqs_index.py"
 @ echo.
-ECHO 　　　执行元件表插入..请稍等..
+ECHO 　　　执行元件表：管道材料等级表-元件表插入..请稍等..
 start python "cqs_items.py"
 @ echo.
-ECHO 　　　执行壁厚表插入..请稍等..
+ECHO 　　　执行管道厚度：管道材料等级表-外径壁厚表插入..请稍等..
 start python "cqs_pipe_thickness.py"
 @ echo.
-ECHO 　　　执行压力温度表插入..请稍等..
+ECHO 　　　执行压力温度：管道材料等级表-压力温度表插入..请稍等..
 start python "cqs_pt_rating.py"
 @ echo.
-ECHO 　　　执行注释表插入..请稍等..
+ECHO 　　　执行注释表：管道材料等级索引表/等级表-备注内容插入..请稍等..
 start python "cqs_note.py"
 @ echo.
-ECHO 　　　执行支管连接表插入 数据会达到上万行 ..请耐心等待..
+ECHO 　　　执行管道连接：管道材料等级表-支管连接表插入 数据会达到上万行 ..请耐心等待..
 python "cqs_branch_connect.py"
 @ echo.
 ECHO 　　　正在上传至FTP，上传完后会仍旧保留目录下的excel..请稍等..
@@ -68,25 +68,25 @@ goto menu
 
 :ContinueAll
 @ echo.
-ECHO 　　　执行索引表插入..请稍等..
+ECHO 　　　warning:并行运行python脚本..当六个框均运行结束退出后进入主菜单方可退出..
+ECHO 　　　执行索引表：管道材料等级索引表插入..请稍等..
 start python "cqs_index.py"
 @ echo.
-ECHO 　　　执行元件表插入..请稍等..
+ECHO 　　　执行元件表：管道材料等级表-元件表插入..请稍等..
 start python "cqs_items.py"
 @ echo.
-ECHO 　　　执行壁厚表插入..请稍等..
+ECHO 　　　执行管道厚度：管道材料等级表-外径壁厚表插入..请稍等..
 start python "cqs_pipe_thickness.py"
 @ echo.
-ECHO 　　　执行压力温度表插入..请稍等..
+ECHO 　　　执行压力温度：管道材料等级表-压力温度表插入..请稍等..
 start python "cqs_pt_rating.py"
 @ echo.
-ECHO 　　　执行注释表插入..请稍等..
+ECHO 　　　执行注释表：管道材料等级索引表/等级表-备注内容插入..请稍等..
 start python "cqs_note.py"
 @ echo.
-ECHO 　　　执行支管连接表插入 数据量较多..请耐心等待..
+ECHO 　　　执行管道连接：管道材料等级表-支管连接表插入 数据会达到上万行 ..请耐心等待..
 python "cqs_branch_connect.py"
 ECHO 　　  warning：并行运行python脚本..当六个框均运行结束退出后方可退出..
-ping -n 5 127.1>nul
 @ echo.
 ECHO 　　　执行进行续传的数据修改..请稍等..
 python "continue_load.py"

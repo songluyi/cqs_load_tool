@@ -10,9 +10,10 @@ Contact:    slysly759@gmail.com
 -------------------------------------------------------------------------------
 """
 import cx_Oracle
-
+from cqs_pt_rating_database import get_ini
+db_connect=get_ini()[0]
 def get_batch():
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r=cur.execute("select batch_id,comments,ATTRIBUTE_CATEGORY,creation_date from cux.cux_cqs_batchs_t order by batch_id")
     result=cur.fetchall()
@@ -26,7 +27,7 @@ def recover_batch(re_batch):
     sql_pipe_thickness='insert into cux.cux_cqs_pipe_thickness_t select * from cux.cux_cqs_pipe_thickness_his_t where batch_id='+str(re_batch)
     sql_connection='insert into CUX.CUX_CQS_BRANCH_CONNECT_T select * from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T where batch_id='+str(re_batch)
     sql_note='insert into cux.cux_cqs_notes_t select * from cux.cux_cqs_notes_his_t where batch_id='+str(re_batch)
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     #先执行清空数据语句
     r=cur.execute('truncate table CUX.CUX_CQS_INDEX_T')
@@ -44,7 +45,7 @@ def recover_batch(re_batch):
     conn.commit()
     print('数据已经恢复成功')
 def get_valid_batchid():
-    conn = cx_Oracle.connect("apps/apps@192.168.15.94:1539/NRCRP2")
+    conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r= cur.execute("select max(batch_id) from CUX.CUX_CQS_INDEX_T")
     result=cur.fetchone()

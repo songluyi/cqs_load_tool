@@ -55,10 +55,17 @@ class cqs_note(object):
                             bug_note_id+=1
                             ws_write.cell(row=line, column=1).value=note_id#写入item_id
                             note_id+=1
-                            row_str=ws_load.cell(row=note_line+1, column=1).value
+                            if ws_load.cell(row=note_line+2, column=1).value is None:
+                                row_str=str(ws_load.cell(row=note_line+1, column=1).value)+str(ws_load.cell(row=note_line+2, column=2).value)
+                            else:
+                                row_str=ws_load.cell(row=note_line+1, column=1).value
                             ws_write.cell(row=line, column=2).value=ws_load.cell(row=5, column=5).value#写入service source
-                            NOTE_KEY='注'+str(row_str[4])
+                            if ord(row_str[5])>46:
+                                NOTE_KEY='注'+str(row_str[4])+str(row_str[5])
+                            else:
+                                NOTE_KEY='注'+str(row_str[4])
                             ws_write.cell(row=line, column=3).value=NOTE_KEY#写入note_key
+
                             ws_write.cell(row=line, column=4).value=row_str#写入note信息
                             ws_write.cell(row=line, column=5).value=batch_id#写入batch_id
                             ws_write.cell(row=line, column=6).value=0#写入created by
@@ -80,16 +87,22 @@ class cqs_note(object):
                 for i in range(1,500):
                     if '备注：' in str(ws_load.cell(row=i, column=1).value):
                         count=i
-                for note_line in range(count+1,500):
+                for note_line in range(count,500):
                     if ws_load.cell(row=note_line+1, column=1).value is not None:
                             line+=1
                             bug_note_id+=1
                             ws_write.cell(row=line, column=1).value=note_id#写入item_id
                             note_id+=1
-                            row_str=ws_load.cell(row=note_line+1, column=1).value
                             ws_write.cell(row=line, column=2).value='INDEXER'
-                            row_str=str(row_str)+str(ws_load.cell(row=note_line+1, column=2).value)
-                            NOTE_KEY='注'+str(row_str[0])
+                            if ws_load.cell(row=note_line+2, column=1).value is None and ws_load.cell(row=note_line+2, column=2).value is not None:
+                                row_str=str(ws_load.cell(row=note_line+1, column=1).value)+str(ws_load.cell(row=note_line+1, column=2).value)+str(ws_load.cell(row=note_line+2, column=2).value)
+                            else:
+                                row_str=str(ws_load.cell(row=note_line+1, column=1).value)+str(ws_load.cell(row=note_line+1, column=2).value)
+                            # row_str=str(row_str)+str(ws_load.cell(row=note_line+1, column=2).value)
+                            if ord(row_str[1])>60:
+                                NOTE_KEY='注'+str(row_str[0])
+                            else:
+                                NOTE_KEY='注'+str(row_str[0])+str(row_str[1])
                             ws_write.cell(row=line, column=3).value=NOTE_KEY#写入note_key
                             ws_write.cell(row=line, column=4).value=row_str#写入note信息
                             ws_write.cell(row=line, column=5).value=batch_id#写入batch_id
@@ -127,7 +140,11 @@ if __name__ == '__main__':
     cqs=cqs_note()
     name_list=cqs.get_path()
     note_id=get_noteid()
+    if note_id is None:
+        note_id=0
     batch_id=get_batch_id()
+    if batch_id is None:
+        batch_id=0
     bug_note_id=0
     cqs.make_exceldata(name_list,bug_note_id,note_id,batch_id)
     excel_name='new注释表.xlsx'

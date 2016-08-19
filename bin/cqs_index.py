@@ -33,7 +33,6 @@ class cqs_index(object):
         for name in name_list:
             space_tab=space_tab+nothing_id
             # load_name=os.path.basename(name)
-            index_id=get_indexid()
             if bug_index_id>index_id:#因为读取不同的excel，此时数据库中还没有同步插入 必须要用一个bug_pi_id来解决下一个文件的pi_id的取值问题
                 index_id=bug_index_id
             #写入基本的excel表头
@@ -77,7 +76,8 @@ class cqs_index(object):
                     ws_write.cell(row=line+space_tab, column=16).value=ws_load.cell(row=row+1, column=8).value #写入FLANGE_FACING
                     ws_write.cell(row=line+space_tab, column=17).number_format='0.00'
                     ws_write.cell(row=line+space_tab, column=17).value=float(ws_load.cell(row=row+1, column=9).value) #写入CA
-                    ws_write.cell(row=line+space_tab, column=19).value=batch_id #写入BATCH_ID note值不导入 因此留空
+                    ws_write.cell(row=line+space_tab, column=18).value=ws_load.cell(row=row+1, column=10).value#写入note注释
+                    ws_write.cell(row=line+space_tab, column=19).value=batch_id #写入BATCH_ID
                     ws_write.cell(row=line+space_tab, column=20).value=-1 #写入CREATED_BY
                     ws_write.cell(row=line+space_tab, column=21).number_format='yyyy-mm-dd'
                     ws_write.cell(row=line+space_tab, column=21).value=today_time #写入CREATION_DATE
@@ -159,8 +159,12 @@ if __name__ == '__main__':
     bug_index_id=0
     space_tab=0
     index_id=get_indexid()
+    if index_id is None:
+        index_id=0
     nothing=0
     batch_id=get_batch_id()
+    if batch_id is None:
+        batch_id=0
     batch_id=batch_id+1
     bug_index_id=cqs.make_exceldata(bug_index_id,name_list,space_tab,index_id,nothing,batch_id)
     data_list=compliment()

@@ -25,12 +25,12 @@ def check_batch_id():
     pipe_batch_id=cqs_pipe_thickness_database.get_batch_id()
     pt_rate_batch_id=cqs_pt_rating_database.get_batch_id()
     connect_batch_id=cqs_branch_connect_database.get_batch_id()
-    print('索引表历史最大批次号',index_batch_id)
-    print('元件表历史最大批次号',item_batch_id)
-    print('注释表历史最大批次号',note_batch_id)
-    print('壁厚表历史最大批次号',pipe_batch_id)
-    print('压力温度表历史最大批次号',pt_rate_batch_id)
-    print('支管连接批次号',connect_batch_id)
+    print('管道材料等级索引表历史最大批次号',index_batch_id)
+    print('管道材料等级表-元件表历史最大批次号',item_batch_id)
+    print('管道材料等级索引表/等级表-备注内容历史最大批次号',note_batch_id)
+    print('管道材料等级表-外径壁厚表历史最大批次号',pipe_batch_id)
+    print('管道材料等级表-压力温度表历史最大批次号',pt_rate_batch_id)
+    print('管道材料等级表-支管连接表最大批次号',connect_batch_id)
     if index_batch_id==item_batch_id==note_batch_id==pipe_batch_id==pt_rate_batch_id==connect_batch_id:
         print('目前所有批次号正常')
     else:
