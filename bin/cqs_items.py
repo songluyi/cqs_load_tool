@@ -88,7 +88,7 @@ class cqs_items(object):
                             ws_write.cell(row=line, column=16).value=0#写入update by
                             ws_write.cell(row=line, column=17).value=today_time
                             ws_write.cell(row=line, column=18).value=0#写入last__update__login
-        name='new'+'元件表'+'.xlsx'
+        name='new'+'管道材料等级表-元件表'+'.xlsx'
         wb_write.save(name)
         print('已经生成excel，请注意查看根目录')
 if __name__ == '__main__':
@@ -105,7 +105,7 @@ if __name__ == '__main__':
         item_order_number=0
     bug_item_id=0
     cqs.make_exceldata(name_list,bug_item_id,item_id,batch_id,item_order_number)
-    excel_name='new元件表.xlsx'
+    excel_name='new管道材料等级表-元件表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
     insert_db(data_list)

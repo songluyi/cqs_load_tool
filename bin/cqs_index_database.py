@@ -49,7 +49,7 @@ def compliment():
              'LAST_UPDATE_DATE', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
              'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8', 'ATTRIBUTE9',
              'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13', 'ATTRIBUTE14', 'ATTRIBUTE15']
-    name='new索引表.xlsx'
+    name='new管道材料等级索引表.xlsx'
     # excel_path=os.getcwd()+'\\'+'bin\\'+name
     wb_get_excel = load_workbook(filename=name)
     sheets = wb_get_excel.get_sheet_names()

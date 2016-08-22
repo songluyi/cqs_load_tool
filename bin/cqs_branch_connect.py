@@ -75,7 +75,7 @@ class cqs_branch_connect(object):
                         ws_write.cell(row=line, column=11).number_format='yyyy-mm-dd'
                         ws_write.cell(row=line, column=11).value=today_time
                         ws_write.cell(row=line, column=12).value=0#写入last_update_login
-        name='new'+'管道连接'+'.xlsx'
+        name='new'+'管道材料等级表-支管连接表'+'.xlsx'
         wb_write.save(name)
         print('已经完成管道连接表的excel生成')
 
@@ -93,7 +93,7 @@ if __name__ == '__main__':
         conn_order_number=0
     bug_connection_id=0
     cqs.make_exceldata(name_list,bug_connection_id,connection_id,batch_id,conn_order_number)
-    excel_name='new管道连接.xlsx'
+    excel_name='new管道材料等级表-支管连接表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
     insert_db(data_list)

@@ -124,7 +124,7 @@ class cqs_index(object):
                             ws_write.cell(row=line+space_tab, column=11).value=float(new_data)#小的读入max press里面
                         else:
                             ws_write.cell(row=line+space_tab, column=12).value=pres_data#其他无法解析情况扔进spec press里面
-        name='new'+'索引表'+'.xlsx'
+        name='new'+'管道材料等级索引表'+'.xlsx'
         wb_write.save(name)
         print('已经生成excel，请注意查看根目录')
         return index_id

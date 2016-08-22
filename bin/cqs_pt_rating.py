@@ -84,7 +84,7 @@ class cqs_pt_rating(object):
                         ws_write.cell(row=line, column=10).number_format='yyyy-mm-dd'
                         ws_write.cell(row=line, column=10).value=today_time
                         ws_write.cell(row=line, column=11).value=0#写入last_update_login
-        name='new'+'压力温度'+'.xlsx'
+        name='new'+'管道材料等级表-压力温度表'+'.xlsx'
         wb_write.save(name)
         print('已经完成压力温度表的excel生成')
         return bug_pi_id
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     if pt_order_number is None:
         pt_order_number=0
     cqs.make_exceldata(name_list,bug_pi_id,pi_id,batch_id,pt_order_number)
-    excel_name='new压力温度.xlsx'
+    excel_name='new管道材料等级表-压力温度表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
     insert_db(data_list)

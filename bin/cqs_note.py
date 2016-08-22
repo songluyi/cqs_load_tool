@@ -114,7 +114,7 @@ class cqs_note(object):
                             note_line+=1
                             print('写入了一个到excel')
 
-        name='new'+'注释表'+'.xlsx'
+        name='new'+'管道材料等级索引表-等级表-备注内容'+'.xlsx'
         wb_write.save(name)
         print('已经生成excel，请注意查看根目录')
 
@@ -147,7 +147,7 @@ if __name__ == '__main__':
         batch_id=0
     bug_note_id=0
     cqs.make_exceldata(name_list,bug_note_id,note_id,batch_id)
-    excel_name='new注释表.xlsx'
+    excel_name='new管道材料等级索引表-等级表-备注内容.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
     insert_db(data_list)

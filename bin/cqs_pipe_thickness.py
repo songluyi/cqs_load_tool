@@ -60,18 +60,18 @@ class cqs_pipe_thickness(object):
                             ws_write.cell(row=line, column=2).value=batch_id
                             ws_write.cell(row=line, column=3).value=pipe_order_number
                             ws_write.cell(row=line, column=4).value=ws_load.cell(row=1, column=26).value#写入metal class
-                            if ws_load.cell(row=row, column=column).value is None:
-                                ws_write.cell(row=line, column=5).value='9999'
-                            else:
-                                ws_write.cell(row=line, column=5).value=ws_load.cell(row=row, column=column).value#写入PIPE_DN
-                            if ws_load.cell(row=row+1, column=column).value is None:
-                                ws_write.cell(row=line, column=6).value='9999'
-                            else:
-                                ws_write.cell(row=line, column=6).value=int(ws_load.cell(row=row+1, column=column).value)#PIPE__OUT
-                            if ws_load.cell(row=row+2, column=column).value is None:
-                                ws_write.cell(row=line, column=7).value='9999'
-                            else:
-                                ws_write.cell(row=line, column=7).value=ws_load.cell(row=row+2, column=column).value#PIPE_THICKNESS
+                            # if ws_load.cell(row=row, column=column).value is None:
+                            #     ws_write.cell(row=line, column=5).value='9999'
+                            # else:
+                            ws_write.cell(row=line, column=5).value=ws_load.cell(row=row, column=column).value#写入PIPE_DN
+                            # if ws_load.cell(row=row+1, column=column).value is None:
+                            #     ws_write.cell(row=line, column=6).value='9999'
+                            # else:
+                            ws_write.cell(row=line, column=6).value=ws_load.cell(row=row+1, column=column).value#PIPE__OUT
+                            # if ws_load.cell(row=row+2, column=column).value is None:
+                            #     ws_write.cell(row=line, column=7).value='9999'
+                            # else:
+                            ws_write.cell(row=line, column=7).value=ws_load.cell(row=row+2, column=column).value#PIPE_THICKNESS
                             ws_write.cell(row=line, column=8).value=0#写入created by
                             ws_write.cell(row=line, column=9).number_format='yyyy-mm-dd'
                             ws_write.cell(row=line, column=9).value=today_time
@@ -79,7 +79,7 @@ class cqs_pipe_thickness(object):
                             ws_write.cell(row=line, column=11).number_format='yyyy-mm-dd'
                             ws_write.cell(row=line, column=11).value=today_time
                             ws_write.cell(row=line, column=12).value=0#写入last_update_login
-        name='new'+'管道厚度'+'.xlsx'
+        name='new'+'管道材料等级表-外径壁厚表'+'.xlsx'
         wb_write.save(name)
         print('已经完成管道厚度表的excel生成')
 if __name__ == '__main__':
@@ -96,7 +96,7 @@ if __name__ == '__main__':
         pipe_order_number=0
     bug_pipe_id=0
     cqs.make_exceldata(name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number)
-    excel_name='new管道厚度.xlsx'
+    excel_name='new管道材料等级表-外径壁厚表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
     insert_db(data_list)
