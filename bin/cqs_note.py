@@ -116,7 +116,7 @@ class cqs_note(object):
 
         name='new'+'管道材料等级索引表-等级表-备注内容'+'.xlsx'
         wb_write.save(name)
-        print('已经生成excel，请注意查看根目录')
+        print('已经生成管道材料等级索引表-等级表-备注内容excel，请注意查看根目录')
 
     def get_path(self):
         import os
@@ -153,6 +153,6 @@ if __name__ == '__main__':
     insert_db(data_list)
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
-    print('已经完成对管道注释表表的插入，谢谢使用')
-
-
+    print('已经完成对管道材料等级索引表-等级表-备注内容的插入，谢谢使用')
+    print('如果未出现完成插入的提示则说明该表导入失败')
+    time.sleep(5)

@@ -126,7 +126,7 @@ class cqs_index(object):
                             ws_write.cell(row=line+space_tab, column=12).value=pres_data#其他无法解析情况扔进spec press里面
         name='new'+'管道材料等级索引表'+'.xlsx'
         wb_write.save(name)
-        print('已经生成excel，请注意查看根目录')
+        print('已经生成管道材料等级索引表excel，请注意查看根目录')
         return index_id
 #获取当前目录下的xlsx文件
     def get_path(self):
@@ -170,6 +170,8 @@ if __name__ == '__main__':
     data_list=compliment()
     insert_db(data_list)
     end_time=time.time()
-    print('最后已经完成提交cqs_index~谢谢使用')
+    print('最后已经完成提交管道材料等级索引表~谢谢使用')
     print('耗时：')
     print(end_time-start_time)
+    print('如果未出现完成插入的提示则说明该表导入失败')
+    time.sleep(5)

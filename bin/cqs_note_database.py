@@ -9,10 +9,16 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
-import cx_Oracle,random
+import cx_Oracle,os
 from openpyxl import load_workbook
 from cqs_pt_rating_database import get_ini
 db_connect=get_ini()[0]
+
+# 设置编码，否则：
+# 1. Oracle 查询出来的中文是乱码
+# 2. 插入数据时有中文，会导致
+# UnicodeEncodeError: 'ascii' codec can't encode characters in position 1-7: ordinal not in range(128)
+os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 def get_noteid():
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()

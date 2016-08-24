@@ -90,7 +90,7 @@ class cqs_items(object):
                             ws_write.cell(row=line, column=18).value=0#写入last__update__login
         name='new'+'管道材料等级表-元件表'+'.xlsx'
         wb_write.save(name)
-        print('已经生成excel，请注意查看根目录')
+        print('已经生成管道材料等级表-元件表excel，请注意查看根目录')
 if __name__ == '__main__':
     cqs=cqs_items()
     name_list=cqs_pt_rating().get_path()
@@ -111,6 +111,7 @@ if __name__ == '__main__':
     insert_db(data_list)
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
-    print('已经完成对管道元件表的插入，谢谢使用')
-
+    print('已经完成对管道材料等级表-元件表的插入，谢谢使用')
+    print('如果未出现完成插入的提示则说明该表导入失败')
+    time.sleep(5)
 

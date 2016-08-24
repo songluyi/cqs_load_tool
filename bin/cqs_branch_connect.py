@@ -12,11 +12,10 @@ Contact:    slysly759@gmail.com
 import os,sys
 from openpyxl import Workbook
 from openpyxl import load_workbook
+from check_legal import check_batch_id
 from cqs_branch_connect_database import *
-import threading
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 from cqs_pt_rating_database import compliment
-# from concurrent import futures#采用3.x新出来的多进程
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
@@ -77,7 +76,20 @@ class cqs_branch_connect(object):
                         ws_write.cell(row=line, column=12).value=0#写入last_update_login
         name='new'+'管道材料等级表-支管连接表'+'.xlsx'
         wb_write.save(name)
-        print('已经完成管道连接表的excel生成')
+        print('已经完成管道材料等级表-支管连接表的excel生成')
+
+def check_continue():
+    while True:
+        try:
+            print('\n下面将会对导入的数据进行检查，在未返回主界面之前请不要关闭本窗口')
+            check_flag=int(input('\n请输入一个数字，0表示正常类型，1表示续传类型：'))
+            if -1<check_flag<2:
+                break
+            else:
+                print('尽可以允许输入0和1')
+        except ValueError:
+            print("Oops!  That was no valid number.  Try again...")
+    return check_flag
 
 if __name__ == '__main__':
     cqs=cqs_branch_connect()
@@ -99,8 +111,21 @@ if __name__ == '__main__':
     insert_db(data_list)
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
-    print('已经完成对管道连接表的插入，谢谢使用')
-    insert_batch_db(today_time)
+    print('已经完成对管道材料等级表-支管连接表的插入，谢谢使用')
+    print('如果未出现完成插入的提示则说明该表导入失败')
+    time.sleep(10)
+    check_flag=check_continue()
+    flag=check_batch_id(check_flag=check_flag)[0]
+    if flag is False:
+        print('本次导入失败，部分等级表无法被写入数据库，将执行删除操作')
+        min_batch_id=min(check_batch_id()[1])
+        sql_commands=make_sql_str(min_batch_id)
+        print(sql_commands)
+        s=list(map(del_rest_data,sql_commands))
+        print('删除成功')
+    else:
+        insert_batch_db(today_time)
+
 
 
 

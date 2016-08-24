@@ -9,10 +9,17 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
-import cx_Oracle
+
+import cx_Oracle,os
 from openpyxl import load_workbook
 from cqs_pt_rating_database import get_ini
 db_connect=get_ini()[0]
+# 设置编码，否则：
+# 1. Oracle 查询出来的中文是乱码
+# 2. 插入数据时有中文，会导致
+# UnicodeEncodeError: 'ascii' codec can't encode characters in position 1-7: ordinal not in range(128)
+os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
+
 def get_connectionid():
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
@@ -45,7 +52,19 @@ def insert_db(row):
     r=cur.execute("insert into  CUX.CUX_CQS_BRANCH_CONNECT_HIS_T select * from CUX.CUX_CQS_BRANCH_CONNECT_T")
     conn.commit()
     print('数据已经导入成功')
-
+def del_rest_data(sql_str):
+    conn = cx_Oracle.connect(db_connect)
+    cur =conn.cursor()
+    r=cur.execute(sql_str)
+    conn.commit()
+def make_sql_str(min_batch_id):
+    sql_name=['CUX.CUX_CQS_INDEX_HIS_T','cux.cux_cqs_items_his_t','cux.cux_cqs_pt_rating_his_t','cux.cux_cqs_pipe_thickness_his_t'
+    ,'CUX.CUX_CQS_BRANCH_CONNECT_HIS_T','cux.cux_cqs_notes_his_t']
+    sql_list=[]
+    for name in sql_name:
+        sql_command='delete from %s where batch_id>%s'%(name,min_batch_id)
+        sql_list.append(sql_command)
+    return sql_list
 def insert_batch_db(today_time):
     import getpass
     header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
@@ -53,9 +72,8 @@ def insert_batch_db(today_time):
                  'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
                  'ATTRIBUTE9', 'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13',
                  'ATTRIBUTE14', 'ATTRIBUTE15']
-    COMMENTS=input('请输入一段描述方便自己日后恢复数据,如果是续传请随意填写不会导入到数据库,填写后记得回车:')
+    COMMENTS='Nerin Load'+str(today_time)
     BATCH_ID=get_batch_id()
-    BATCH_ID+=1
     CREATION_DATE=today_time;LAST_UPDATE_DATE=today_time
     data=[]
     CREATED_BY=0;LAST_UPDATED_BY=0
@@ -68,6 +86,12 @@ def insert_batch_db(today_time):
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN,ATTRIBUTE_CATEGORY) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY)", row)
+    conn.commit()
+    COMMENTS=input('请输入一段描述方便自己日后恢复数据,如果是续传请随意填写不会导入到数据库,填写后记得回车:')
+    conn = cx_Oracle.connect(db_connect)
+    cur =conn.cursor()
+    sql="UPDATE cux.cux_cqs_batchs_t set comments='%s' where batch_id=%s"%(COMMENTS,BATCH_ID)
+    r=cur.execute(sql)
     conn.commit()
     print('数据已经导入成功')
 

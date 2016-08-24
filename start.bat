@@ -1,4 +1,4 @@
-@ECHO OFF&PUSHD %~DP0 &TITLE 管道材料等级表+索引表等批量导入工具
+@ECHO OFF&PUSHD %~DP0 &TITLE 管道材料索引表+等级表等批量导入工具
 mode con cols=70 lines=30
 color A
 Rd "%WinDir%\system32\test_permissions" >NUL 2>NUL

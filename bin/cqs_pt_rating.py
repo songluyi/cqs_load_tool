@@ -70,7 +70,6 @@ class cqs_pt_rating(object):
                         pt_order_number+=1
                         line+=1
                         bug_pi_id+=1
-
                         ws_write.cell(row=line, column=1).value=pi_id
                         ws_write.cell(row=line, column=2).value=batch_id
                         ws_write.cell(row=line, column=3).value=pt_order_number
@@ -86,7 +85,7 @@ class cqs_pt_rating(object):
                         ws_write.cell(row=line, column=11).value=0#写入last_update_login
         name='new'+'管道材料等级表-压力温度表'+'.xlsx'
         wb_write.save(name)
-        print('已经完成压力温度表的excel生成')
+        print('已经完成管道材料等级表-压力温度表的excel生成')
         return bug_pi_id
 if __name__ == '__main__':
     cqs=cqs_pt_rating()
@@ -109,4 +108,6 @@ if __name__ == '__main__':
     insert_db(data_list)
     end_time=time.time()
     print('耗时为：',end_time-start_time,'插入总数为：',len(data_list))
-    print('最后已经完成提交cqs的压力与温度数据提交~谢谢使用')
+    print('最后已经完成管道材料等级表-压力温度表提交~谢谢使用')
+    print('如果未出现完成插入的提示则说明该表导入失败')
+    time.sleep(5)

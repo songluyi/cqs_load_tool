@@ -52,7 +52,7 @@ if __name__ == '__main__':
         batches=del_batch.split(',')
         for batch_id in batches:
             delete_batch(batch_id)
-    elif isinstance(del_batch,int):
+    elif isinstance(int(del_batch),int):
         delete_batch(del_batch)
     else:
         print('输入错误')
