@@ -9,10 +9,12 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
+
 import cx_Oracle
 from recover_db import get_valid_batchid,get_batch
 from cqs_pt_rating_database import get_ini
 db_connect=get_ini()[0]
+from cqs_branch_connect_database import return_name
 def delete_batch(re_batch):
     #合成各个SQL插入语句
     sql_index='delete CUX.CUX_CQS_INDEX_HIS_T where batch_id='+str(re_batch)
@@ -24,7 +26,6 @@ def delete_batch(re_batch):
     sql_batch='delete cux.cux_cqs_batchs_t where batch_id='+str(re_batch)
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
-    #先执行清空数据语句
     r=cur.execute(sql_index)
     r=cur.execute(sql_item)
     r=cur.execute(sql_pt_rating)
@@ -40,7 +41,11 @@ if __name__ == '__main__':
     print('\n'+'当前有效批次为：',valid_batchid,'\n')
     print("历史批次如下：")
     for batch in batch_list:
-        print('批次号：',batch[0],'备注：',batch[1],'录入人：',batch[2],'时间：',batch[3])
+        if int(batch[2])==0:
+            user_name='Nerin administrator'
+        else:
+            user_name=return_name(int(batch[2]))
+        print('批次号：',batch[0],'备注：',batch[1],'录入人：',user_name,'时间：',batch[3])
     print('\n'+'1.单个删除仅输入他的批次号即可，如数字6')
     print('2.删除连续批次，如6-9\n'+'3.删除不连续批次请用逗号隔开，如6,8,9'+'\n')
     del_batch=input('请输入你需要删除的批次号：')

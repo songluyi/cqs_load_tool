@@ -44,11 +44,55 @@ def get_order_number():
     new_result=list(result)
     return new_result[0]
 
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        pass
+
+    try:
+        import unicodedata
+        unicodedata.numeric(s)
+        return True
+    except (TypeError, ValueError):
+        pass
+
+def return_domain_username():
+    import getpass
+    username=getpass.getuser()
+    if not is_number(username):
+        print('检测到您的域用户名不正常！请确保您的电脑登陆在域用户')
+        print('不正常的域用户名将会被数字零取代')
+        ATTRIBUTE_CATEGORY=0
+        return ATTRIBUTE_CATEGORY
+    else:
+        sql="select fu.user_id from fnd_user fu where fu.user_name ='%s'"%username
+        conn = cx_Oracle.connect(db_connect)
+        cur =conn.cursor()
+        cur.execute(sql)
+        result=cur.fetchone()
+        return result[0]
+def return_name(username):
+    # import getpass
+    # username=getpass.getuser()
+    if not is_number(username):
+        print('检测到您的域用户名不正常！请确保您的电脑登陆在域用户')
+        print('不正常的域用户名将会被数字零取代')
+        ATTRIBUTE_CATEGORY=0
+        return ATTRIBUTE_CATEGORY
+    else:
+        sql="select fu.description from fnd_user fu where fu.user_id ='%s'"%username
+        conn = cx_Oracle.connect(db_connect)
+        cur =conn.cursor()
+        cur.execute(sql)
+        result=cur.fetchone()
+        return result[0]
 def insert_db(row):
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r=cur.execute("truncate table CUX.CUX_CQS_BRANCH_CONNECT_T")
-    r=cur.executemany(" INSERT INTO CUX.CUX_CQS_BRANCH_CONNECT_T values (:CONNECTION_ID,:BATCH_ID,:CONN_ORDER_NUMBER,:PIPING_MATL_CLASS,:BRANCH_DN,:HEADER_DN,:CONNECTION_TYPE,:CREATED_BY,to_date(:CREATION_DATE,'yyyy/mm/dd'),:LAST_UPDATED_BY,to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY,:ATTRIBUTE1,:ATTRIBUTE2,:ATTRIBUTE3,:ATTRIBUTE4,:ATTRIBUTE5,:ATTRIBUTE6,:ATTRIBUTE7,:ATTRIBUTE8,:ATTRIBUTE9,:ATTRIBUTE10,:ATTRIBUTE11,:ATTRIBUTE12,:ATTRIBUTE13,:ATTRIBUTE14,:ATTRIBUTE15)", row)
+    r=cur.executemany(" INSERT INTO CUX.CUX_CQS_BRANCH_CONNECT_T values (:CONNECTION_ID,:BATCH_ID,:CONN_ORDER_NUMBER,:PIPING_MATL_CLASS,:BRANCH_DN,:HEADER_DN,:CONNECTION_TYPE,:CREATED_BY,to_date(:CREATION_DATE,'YYYY/MM/DD HH24:MI:SS'),:LAST_UPDATED_BY,to_date(:LAST_UPDATE_DATE,'YYYY/MM/DD HH24:MI:SS'),:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY,:ATTRIBUTE1,:ATTRIBUTE2,:ATTRIBUTE3,:ATTRIBUTE4,:ATTRIBUTE5,:ATTRIBUTE6,:ATTRIBUTE7,:ATTRIBUTE8,:ATTRIBUTE9,:ATTRIBUTE10,:ATTRIBUTE11,:ATTRIBUTE12,:ATTRIBUTE13,:ATTRIBUTE14,:ATTRIBUTE15)", row)
     r=cur.execute("insert into  CUX.CUX_CQS_BRANCH_CONNECT_HIS_T select * from CUX.CUX_CQS_BRANCH_CONNECT_T")
     conn.commit()
     print('数据已经导入成功')
@@ -65,8 +109,8 @@ def make_sql_str(min_batch_id):
         sql_command='delete from %s where batch_id>%s'%(name,min_batch_id)
         sql_list.append(sql_command)
     return sql_list
+
 def insert_batch_db(today_time):
-    import getpass
     header_name=['BATCH_ID', 'COMMENTS', 'CREATION_DATE', 'LAST_UPDATE_DATE', 'CREATED_BY',
                  'LAST_UPDATED_BY', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY', 'ATTRIBUTE1', 'ATTRIBUTE2',
                  'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8',
@@ -76,16 +120,16 @@ def insert_batch_db(today_time):
     BATCH_ID=get_batch_id()
     CREATION_DATE=today_time;LAST_UPDATE_DATE=today_time
     data=[]
-    CREATED_BY=0;LAST_UPDATED_BY=0
+    CREATED_BY=return_domain_username()
+    LAST_UPDATED_BY=0
     LAST_UPDATE_LOGIN=1
-    ATTRIBUTE_CATEGORY=getpass.getuser()
     data.append(BATCH_ID);data.append(COMMENTS);data.append(CREATION_DATE);data.append(LAST_UPDATE_DATE)
-    data.append(CREATED_BY);data.append(LAST_UPDATED_BY);data.append(LAST_UPDATE_LOGIN);data.append(ATTRIBUTE_CATEGORY)#目前没想到追加的好方式，打算自己造一个轮子批量append
+    data.append(CREATED_BY);data.append(LAST_UPDATED_BY);data.append(LAST_UPDATE_LOGIN)
     row=dict(zip(header_name,data))
     print(row)
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
-    r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN,ATTRIBUTE_CATEGORY) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'yyyy/mm/dd'),to_date(:LAST_UPDATE_DATE,'yyyy/mm/dd'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN,:ATTRIBUTE_CATEGORY)", row)
+    r=cur.execute(" insert into cux.cux_cqs_batchs_t(BATCH_ID,COMMENTS,CREATION_DATE,LAST_UPDATE_DATE,CREATED_BY,LAST_UPDATED_BY,LAST_UPDATE_LOGIN) values (:BATCH_ID,:COMMENTS,to_date(:CREATION_DATE,'YYYY/MM/DD HH24:MI:SS'),to_date(:LAST_UPDATE_DATE,'YYYY/MM/DD HH24:MI:SS'),:CREATED_BY,:LAST_UPDATED_BY,:LAST_UPDATE_LOGIN)", row)
     conn.commit()
     COMMENTS=input('请输入一段描述方便自己日后恢复数据,如果是续传请随意填写不会导入到数据库,填写后记得回车:')
     conn = cx_Oracle.connect(db_connect)

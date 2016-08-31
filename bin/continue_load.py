@@ -12,10 +12,20 @@ Contact:    slysly759@gmail.com
 import cx_Oracle
 from cqs_pt_rating_database import get_ini
 db_connect=get_ini()[0]
+from cqs_branch_connect_database import return_domain_username
 def get_batch_id():
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
     r= cur.execute("select max(batch_id) from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T")
+    result=cur.fetchone()
+    new_result=list(result)
+    return new_result[0]
+
+def return_formal_creater(change_batch_id):
+    conn = cx_Oracle.connect(db_connect)
+    cur =conn.cursor()
+    sql='select created_by from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T where batch_id=%s'%change_batch_id
+    r= cur.execute(sql)
     result=cur.fetchone()
     new_result=list(result)
     return new_result[0]
@@ -24,12 +34,14 @@ def continue_load_db():
     cur =conn.cursor()
     del_batch_id=get_batch_id()
     change_batch_id=del_batch_id-1
-    sql_index='update CUX.CUX_CQS_INDEX_HIS_T set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
-    sql_item='update cux.cux_cqs_items_his_t set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
-    sql_pt_rating='update cux.cux_cqs_pt_rating_his_t set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
-    sql_thickness='update cux.cux_cqs_pipe_thickness_his_t set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
-    sql_connect='update CUX.CUX_CQS_BRANCH_CONNECT_HIS_T set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
-    sql_note='update cux.cux_cqs_notes_his_t set batch_id='+str(change_batch_id)+'where batch_id='+str(del_batch_id)
+    updated_name=return_domain_username()
+    back_created_by=return_formal_creater(change_batch_id)
+    sql_index='update CUX.CUX_CQS_INDEX_HIS_T set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
+    sql_item='update cux.cux_cqs_items_his_t set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
+    sql_pt_rating='update cux.cux_cqs_pt_rating_his_t set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
+    sql_thickness='update cux.cux_cqs_pipe_thickness_his_t set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
+    sql_connect='update CUX.CUX_CQS_BRANCH_CONNECT_HIS_T set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
+    sql_note='update cux.cux_cqs_notes_his_t set batch_id='+str(change_batch_id)+',last_updated_by='+str(updated_name)+',created_by='+str(back_created_by)+'where batch_id='+str(del_batch_id)
     # sql_batchs='update cux.cux_cqs_batchs_his_t set batch_id='+str(change_batch_id)+'where batch_id='+str(get_batch_id())
     r=cur.execute(sql_index)
     r=cur.execute(sql_item)

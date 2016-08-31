@@ -9,6 +9,7 @@ Contact:    slysly759@gmail.com
  
 -------------------------------------------------------------------------------
 """
+
 # for i in range(1,100):
 #     i=str(i)
 #     url='https://xueqiu.com/stock/cata/stocklist.json?page='+i+'&size=30&order=desc&orderby=percent&exchange=CN&plate=A%%E8%%82%%A1%%E6%%8C%%87%%E6%%95%%B0&_=1470367605448'
@@ -88,16 +89,80 @@ Contact:    slysly759@gmail.com
 # else:
 #     print('success')
 
-def check_continue():
-    while True:
-        try:
-            check_flag=int(input('\n请输入一个数字，0表示正常类型，1表示续传类型：'))
-            if -1<check_flag<2:
-                break
-            else:
-                print('尽可以允许输入0和1')
-        except ValueError:
-            print("Oops!  That was no valid number.  Try again...")
-    return check_flag
-s=check_continue()
-print(s)
+# def check_continue():
+#     while True:
+#         try:
+#             check_flag=int(input('\n请输入一个数字，0表示正常类型，1表示续传类型：'))
+#             if -1<check_flag<2:
+#                 break
+#             else:
+#                 print('尽可以允许输入0和1')
+#         except ValueError:
+#             print("Oops!  That was no valid number.  Try again...")
+#     return check_flag
+# s=check_continue()
+# print(s)
+# print(1%2)
+
+# import time
+# today_time=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+# today_time=today_time.replace('-','/')
+# print(today_time)
+# import cx_Oracle
+# from cqs_pt_rating_database import get_ini
+# db_connect=get_ini()[0]
+# def is_number(s):
+#     try:
+#         float(s)
+#         return True
+#     except ValueError:
+#         pass
+#
+#     try:
+#         import unicodedata
+#         unicodedata.numeric(s)
+#         return True
+#     except (TypeError, ValueError):
+#         pass
+#
+#     return False
+# print(is_number('123'))
+# def return_domain_username():
+#     username=101087
+#     sql="select fu.user_id from fnd_user fu where fu.user_name ='%s'"%username
+#     conn = cx_Oracle.connect(db_connect)
+#     cur =conn.cursor()
+#     cur.execute(sql)
+#     result=cur.fetchone()
+#     return result
+#
+# print(return_domain_username()[0])
+# username=100232
+# sql="select fu.description from fnd_user fu where fu.user_name ='%s'"%username
+# conn = cx_Oracle.connect(db_connect)
+# cur =conn.cursor()
+# cur.execute(sql)
+# result=cur.fetchone()
+# print(result[0])
+
+# def return_formal_creater(change_batch_id):
+#     conn = cx_Oracle.connect(db_connect)
+#     cur =conn.cursor()
+#     sql='select created_by from CUX.CUX_CQS_BRANCH_CONNECT_HIS_T where batch_id=%s'%change_batch_id
+#     r= cur.execute(sql)
+#     result=cur.fetchone()
+#     new_result=list(result)
+#     return new_result[0]
+#
+# print(return_formal_creater(14))
+
+import winreg
+key = winreg.OpenKey(winreg.HKEY_CURRENT_USER,r"Software\Microsoft\Windows\CurrentVersion\Explorer")
+try:
+    i=0
+    while 1:
+        name, value, type = winreg.EnumValue(key, i)
+        print(repr(name),repr(value),repr(type))
+        i+=1
+except WindowsError:
+    print('finish')

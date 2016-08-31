@@ -58,7 +58,7 @@ ECHO 　　　执行注释表：管道材料等级索引表/等级表-备注内容插入..请稍等..
 start python "cqs_note.py"
 @ echo.
 ECHO 　　　执行管道连接：管道材料等级表-支管连接表插入 数据会达到上万行 ..请耐心等待..
-python "cqs_branch_connect.py"
+python "cqs_branch_connect.py" -t 0
 @ echo.
 ECHO 　　　正在上传至FTP，上传完后会仍旧保留目录下的excel..请稍等..
 python "about_ftp.py"
@@ -85,7 +85,7 @@ ECHO 　　　执行注释表：管道材料等级索引表/等级表-备注内容插入..请稍等..
 start python "cqs_note.py"
 @ echo.
 ECHO 　　　执行管道连接：管道材料等级表-支管连接表插入 数据会达到上万行 ..请耐心等待..
-python "cqs_branch_connect.py"
+python "cqs_branch_connect.py" -t 1
 ECHO 　　  warning：并行运行python脚本..当六个框均运行结束退出后方可退出..
 @ echo.
 ECHO 　　　执行进行续传的数据修改..请稍等..

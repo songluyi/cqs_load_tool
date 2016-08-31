@@ -16,7 +16,7 @@ import time
 from cqs_note_database import *
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数 我将生成新excel数据读入成list封装成一个函数
 from cqs_pt_rating_database import compliment
-from openpyxl.styles import numbers
+from cqs_branch_connect_database import return_domain_username
 import time
 header_name=['NOTE_ID', 'SERVICE_SOURCE', 'NOTE_KEY', 'NOTE', 'BATCH_ID', 'CREATED_BY', 'CREATION_DATE',
              'LAST_UPDATED_BY', 'LAST_UPDATE_DATE', 'LAST_UPDATE_LOGIN', 'ATTRIBUTE_CATEGORY',
@@ -26,7 +26,7 @@ header_name=['NOTE_ID', 'SERVICE_SOURCE', 'NOTE_KEY', 'NOTE', 'BATCH_ID', 'CREAT
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
 class cqs_note(object):
-    def make_exceldata(self,name_list,bug_note_id,note_id,batch_id):
+    def make_exceldata(self,name_list,bug_note_id,note_id,batch_id,domain_name):
         wb_write=Workbook()
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'note'
@@ -68,7 +68,7 @@ class cqs_note(object):
 
                             ws_write.cell(row=line, column=4).value=row_str#写入note信息
                             ws_write.cell(row=line, column=5).value=batch_id#写入batch_id
-                            ws_write.cell(row=line, column=6).value=0#写入created by
+                            ws_write.cell(row=line, column=6).value=domain_name#写入created by
                             ws_write.cell(row=line, column=7).value=today_time#写入creat_time
                             ws_write.cell(row=line, column=8).value=0#update_by
                             ws_write.cell(row=line, column=9).value=today_time#写入Last_date
@@ -146,7 +146,8 @@ if __name__ == '__main__':
     if batch_id is None:
         batch_id=0
     bug_note_id=0
-    cqs.make_exceldata(name_list,bug_note_id,note_id,batch_id)
+    domain_name=return_domain_username()
+    cqs.make_exceldata(name_list,bug_note_id,note_id,batch_id,domain_name)
     excel_name='new管道材料等级索引表-等级表-备注内容.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()

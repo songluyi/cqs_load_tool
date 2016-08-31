@@ -15,6 +15,7 @@ from openpyxl import load_workbook
 from cqs_pipe_thickness_database import *
 from cqs_pt_rating_database import compliment
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
+from cqs_branch_connect_database import return_domain_username
 import time
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
@@ -25,7 +26,7 @@ header_name=['PIPE_ID', 'BATCH_ID', 'PIPE_ORDER_NUMBER', 'PIPING_MATL_CLASS', 'P
              'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13', 'ATTRIBUTE14', 'ATTRIBUTE15']
 
 class cqs_pipe_thickness(object):
-    def make_exceldata(self,name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number):
+    def make_exceldata(self,name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number,domain_name):
         wb_write=Workbook()
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'pipe_thickness'
@@ -64,19 +65,13 @@ class cqs_pipe_thickness(object):
                             #     ws_write.cell(row=line, column=5).value='9999'
                             # else:
                             ws_write.cell(row=line, column=5).value=ws_load.cell(row=row, column=column).value#写入PIPE_DN
-                            # if ws_load.cell(row=row+1, column=column).value is None:
-                            #     ws_write.cell(row=line, column=6).value='9999'
-                            # else:
                             ws_write.cell(row=line, column=6).value=ws_load.cell(row=row+1, column=column).value#PIPE__OUT
-                            # if ws_load.cell(row=row+2, column=column).value is None:
-                            #     ws_write.cell(row=line, column=7).value='9999'
-                            # else:
                             ws_write.cell(row=line, column=7).value=ws_load.cell(row=row+2, column=column).value#PIPE_THICKNESS
-                            ws_write.cell(row=line, column=8).value=0#写入created by
-                            ws_write.cell(row=line, column=9).number_format='yyyy-mm-dd'
+                            ws_write.cell(row=line, column=8).value=domain_name#写入created by
+                            # ws_write.cell(row=line, column=9).number_format='yyyy-mm-dd'
                             ws_write.cell(row=line, column=9).value=today_time
                             ws_write.cell(row=line, column=10).value=0#写入last_update_by
-                            ws_write.cell(row=line, column=11).number_format='yyyy-mm-dd'
+                            # ws_write.cell(row=line, column=11).number_format='yyyy-mm-dd'
                             ws_write.cell(row=line, column=11).value=today_time
                             ws_write.cell(row=line, column=12).value=0#写入last_update_login
         name='new'+'管道材料等级表-外径壁厚表'+'.xlsx'
@@ -95,7 +90,8 @@ if __name__ == '__main__':
     if pipe_order_number is None:
         pipe_order_number=0
     bug_pipe_id=0
-    cqs.make_exceldata(name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number)
+    domain_name=return_domain_username()
+    cqs.make_exceldata(name_list,bug_pipe_id,pipe_id,batch_id,pipe_order_number,domain_name)
     excel_name='new管道材料等级表-外径壁厚表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()

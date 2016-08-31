@@ -15,6 +15,7 @@ from openpyxl import load_workbook
 import time
 from cqs_index_database import get_indexid,compliment,get_batch_id,insert_db
 from openpyxl.styles import numbers
+from cqs_branch_connect_database import return_domain_username
 style_index_id=numbers.NumberFormatDescriptor(style=numbers.FORMAT_NUMBER_00)
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
@@ -26,7 +27,7 @@ header_name=['INDEX_ID', 'INDEX_ORDER', 'CATAGORY', 'SERVICES', 'DESIGN_TEMP_SOU
              'ATTRIBUTE3', 'ATTRIBUTE4', 'ATTRIBUTE5', 'ATTRIBUTE6', 'ATTRIBUTE7', 'ATTRIBUTE8', 'ATTRIBUTE9',
              'ATTRIBUTE10', 'ATTRIBUTE11', 'ATTRIBUTE12', 'ATTRIBUTE13', 'ATTRIBUTE14', 'ATTRIBUTE15', 'ROWID']
 class cqs_index(object):
-    def make_exceldata(self,bug_index_id,name_list,space_tab,index_id,nothing_id,batch_id):
+    def make_exceldata(self,bug_index_id,name_list,space_tab,index_id,nothing_id,batch_id,domain_name):
         wb_write=Workbook()
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'PMC Index'
@@ -78,7 +79,7 @@ class cqs_index(object):
                     ws_write.cell(row=line+space_tab, column=17).value=float(ws_load.cell(row=row+1, column=9).value) #写入CA
                     ws_write.cell(row=line+space_tab, column=18).value=ws_load.cell(row=row+1, column=10).value#写入note注释
                     ws_write.cell(row=line+space_tab, column=19).value=batch_id #写入BATCH_ID
-                    ws_write.cell(row=line+space_tab, column=20).value=-1 #写入CREATED_BY
+                    ws_write.cell(row=line+space_tab, column=20).value=domain_name #写入CREATED_BY
                     ws_write.cell(row=line+space_tab, column=21).number_format='yyyy-mm-dd'
                     ws_write.cell(row=line+space_tab, column=21).value=today_time #写入CREATION_DATE
                     ws_write.cell(row=line+space_tab, column=22).number_format='0.00'
@@ -166,7 +167,8 @@ if __name__ == '__main__':
     if batch_id is None:
         batch_id=0
     batch_id=batch_id+1
-    bug_index_id=cqs.make_exceldata(bug_index_id,name_list,space_tab,index_id,nothing,batch_id)
+    domain_name=return_domain_username()
+    bug_index_id=cqs.make_exceldata(bug_index_id,name_list,space_tab,index_id,nothing,batch_id,domain_name)
     data_list=compliment()
     insert_db(data_list)
     end_time=time.time()

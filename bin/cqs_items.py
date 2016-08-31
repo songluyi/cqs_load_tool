@@ -12,11 +12,10 @@ Contact:    slysly759@gmail.com
 import os
 from openpyxl import Workbook
 from openpyxl import load_workbook
-import time
 from cqs_items_database import *
 from cqs_pt_rating import cqs_pt_rating#这里主要为了引入get_path函数
 from cqs_pt_rating_database import compliment
-from openpyxl.styles import numbers
+from cqs_branch_connect_database import return_domain_username
 import time
 header_name=['ITEM_ID', 'BATCH_ID', 'ITEM_ORDER_NUMBER', 'PIPING_MATL_CLASS', 'ITEM_CATEGORY',
              'ITEM_NAME', 'MIN_DN', 'MAX_DN', 'END_FACING', 'THK_RATING', 'MATERIAL', 'STANDARD_MODEL',
@@ -27,7 +26,7 @@ header_name=['ITEM_ID', 'BATCH_ID', 'ITEM_ORDER_NUMBER', 'PIPING_MATL_CLASS', 'I
 today_time=time.strftime("%Y-%m-%d", time.localtime())
 today_time=today_time.replace('-','/')
 class cqs_items(object):
-    def make_exceldata(self,name_list,bug_item_id,item_id,batch_id,item_order_number):
+    def make_exceldata(self,name_list,bug_item_id,item_id,batch_id,item_order_number,domain_name):
         wb_write=Workbook()
         ws_write = wb_write.get_active_sheet()
         ws_write.title = 'item'
@@ -83,7 +82,7 @@ class cqs_items(object):
                                 ws_write.cell(row=line, column=11).value=str(ws_load.cell(row=row, column=12).value)#写入MATERIAL
                             ws_write.cell(row=line, column=12).value=ws_load.cell(row=row, column=16).value#写入STANDARD_MODEL
                             ws_write.cell(row=line, column=13).value=ws_load.cell(row=row, column=20).value#写入STANDARD_MODEL
-                            ws_write.cell(row=line, column=14).value=0#写入created by
+                            ws_write.cell(row=line, column=14).value=domain_name#写入created by
                             ws_write.cell(row=line, column=15).value=today_time
                             ws_write.cell(row=line, column=16).value=0#写入update by
                             ws_write.cell(row=line, column=17).value=today_time
@@ -104,7 +103,8 @@ if __name__ == '__main__':
     if item_order_number is None:
         item_order_number=0
     bug_item_id=0
-    cqs.make_exceldata(name_list,bug_item_id,item_id,batch_id,item_order_number)
+    domain_name=return_domain_username()
+    cqs.make_exceldata(name_list,bug_item_id,item_id,batch_id,item_order_number,domain_name)
     excel_name='new管道材料等级表-元件表.xlsx'
     data_list=compliment(header_name,excel_name)
     start_time=time.time()
