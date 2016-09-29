@@ -13,7 +13,7 @@ import os,random
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import time
-from cqs_index_database import get_indexid,compliment,get_batch_id,insert_db
+from cqs_index_database import get_indexid,compliment,get_batch_id,insert_db,get_changed_valid_batch_id
 from openpyxl.styles import numbers
 from cqs_branch_connect_database import return_domain_username
 style_index_id=numbers.NumberFormatDescriptor(style=numbers.FORMAT_NUMBER_00)
@@ -129,7 +129,7 @@ class cqs_index(object):
         wb_write.save(name)
         print('已经生成管道材料等级索引表excel，请注意查看根目录')
         return index_id
-#获取当前目录下的xlsx文件
+    #获取当前目录下的xlsx文件
     def get_path(self):
         import os
         current_path=os.path.abspath(os.path.join(os.path.dirname('cqs_index.py'),os.path.pardir))
@@ -153,7 +153,10 @@ class cqs_index(object):
 
 
 
+
+
 if __name__ == '__main__':
+    get_changed_valid_batch_id()
     start_time=time.time()
     cqs=cqs_index()
     name_list=cqs.get_path()

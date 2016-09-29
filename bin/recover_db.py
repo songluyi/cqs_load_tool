@@ -13,6 +13,8 @@ import cx_Oracle
 from cqs_pt_rating_database import get_ini
 db_connect=get_ini()[0]
 from cqs_branch_connect_database import return_name
+import warnings
+warnings.simplefilter("ignore")
 def get_batch():
     conn = cx_Oracle.connect(db_connect)
     cur =conn.cursor()
@@ -55,15 +57,15 @@ def get_valid_batchid():
 
 if __name__ == '__main__':
     batch_list=get_batch()
-    valid_batchid=get_valid_batchid()
-    print('\n'+'当前有效批次为：',valid_batchid,'\n')
     print("历史批次如下：")
     for batch in batch_list:
         if int(batch[2])==0:
-            user_name='Nerin administrator'
+            user_name=0
         else:
             user_name=return_name(int(batch[2]))
         print('录入人如果为数字零则是非域用户创建')
         print('批次号：',batch[0],'备注：',batch[1],'录入人：',user_name,'时间：',batch[3])
+    valid_batchid=get_valid_batchid()
+    print('\n'+'当前有效批次为：',valid_batchid,'\n')
     re_batch=int(input('请输入你需要恢复的批次号：'))
     recover_batch(re_batch)

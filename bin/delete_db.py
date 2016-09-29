@@ -42,7 +42,7 @@ if __name__ == '__main__':
     print("历史批次如下：")
     for batch in batch_list:
         if int(batch[2])==0:
-            user_name='Nerin administrator'
+            user_name=0
         else:
             user_name=return_name(int(batch[2]))
         print('批次号：',batch[0],'备注：',batch[1],'录入人：',user_name,'时间：',batch[3])
